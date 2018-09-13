@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+
+
+    <script>
+
+        {#        $(function () {
+                    $.messager.alert('提示信息', '这是提示的内容，测试jquery使用')
+                })#}
+
+        {#        $(function () {
+                    $.messager.confirm('确认', '您确认想要删除记录吗？', function (r) {
+                        if (r) {
+                            alert('确认删除');
+                        } else {
+                            alert('取消删除')
+                        }
+                    });
+                })#}
+
+
+        {#        $(function () {
+                    $.messager.show({
+                        title: '我的消息',
+                        msg: '消息将在2秒后关闭。',
+                        timeout: 2000,
+                        showType: 'slide'
+                    });
+                })#}
+
+
+        {#        $(function () {
+                    $.messager.prompt('提示信息', '请输入你的姓名：', function (r) {
+
+                        if (r) {
+                            alert('你的姓名是：' + r);
+                        }else {
+                            alert('点击了取消，我什么都不用处理，自动关闭窗口')
+                        }
+                    });
+                })#}
+
+        $(function () {
+            $.messager.progress({
+
+                title: '这是标题',
+                msg: '这是文本',
+                text: '努力中...',
+                interval: '500'
+            });
+        })
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

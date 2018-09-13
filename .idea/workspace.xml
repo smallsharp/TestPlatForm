@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/front/templates/suite_wx.html" line="238" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="373ea3d8-684a-4ec7-90b4-438a694394c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TesterHome/front/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TesterHome/server/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flasktest/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zlktqa/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Python学习.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/preferred-vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.pydevproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/1.基础用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/2.制作新浪新闻网络爬虫.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/MysqlUtil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/创建数据库表.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/基础操作.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/数据库插入.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/数据库更新.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/数据库查询.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Mysql数据库/数据库测试.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/1.Numpy属性.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/2.Numpy创建array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/3.Numpy基础运算1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/函数之argsort().py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/Numpy常用/函数之tile().py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/01_QMainWindow/01.创建主窗口.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/01_QMainWindow/02.主窗口居中.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/01_QMainWindow/03.关闭主窗口.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/01_QMainWindow/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/02_QWidget/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/02_QWidget/屏幕坐标系统显示.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/1.基本窗口控件/下拉框.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/AndoridTool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/AndroidService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/Monkey/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/Monkey/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/Monkey/service.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/Monkey/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/exit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/pytest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/1.简单的例子(附注释).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/2.应用程序的图标.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/3.显示提示语 .py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/4.关闭窗口.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/5.消息框.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/6.窗口显示在屏幕的中间.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【一】基本功能/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【二】布局管理/1.绝对定位.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【二】布局管理/2.框布局 Boxlayout .py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【二】布局管理/3.表格布局 QGridLayout .py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【二】布局管理/4.评论的例子.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【二】布局管理/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/.cache/v/cache/lastfailed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/1.信号和槽都是内置的.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/2.信号内置，槽自定义.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/2.重新实现事件处理器.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/3.事件发送者.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/3.信号自定义，槽内置.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/4.信号和槽都是自定义.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/4.发出信号.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/6.自定义信号带参数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/7.自定义信号带参数2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【五】事件和信号/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【六】对话框/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【六】对话框/2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【六】对话框/3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【六】对话框/4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【六】对话框/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【四】菜单和工具栏/1.状态栏.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【四】菜单和工具栏/2.菜单栏.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【四】菜单和工具栏/3.工具栏.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【四】菜单和工具栏/4.把他们放一起.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/【四】菜单和工具栏/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/01_winSignalSlot01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/buildSignalSlot03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/buildinSignalSlot01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/buildinSignalSlot02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/connSlotsByName01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/connSlotsByName02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/pysignalSlot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/pysignalSlot2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/signalSlot01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/signalSlot02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/signalSlot03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/信号与槽/winSignalSlot04.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/关于布局.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/关于布局2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/关于布局3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/多线程/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/多线程/thread01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/多线程/thread02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/多线程/thread03.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/01_layoutAddStretch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/02_layoutAddStretch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/03_layoutAddStretch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/04_vboxLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/05_gridLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/06_gridLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/07_fromLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/08_nestLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/09_nestLayout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/10_QSplitter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/11.layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/布局管理/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/弹出框大全.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/1.QCheckBox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/2.开关按钮 Toggle button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/3.滑动条 QSlider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/4.进度条QProgressBar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/5.日历控件 QCalendarWidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/6.QPixmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/7.文本框 QLineEdit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/8.QSplitter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/9.下拉列表 QComboBox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/PyQt5/控件/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/crawler/ToutiaoJiePai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/1.读取图片.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/10.PIL和OpenCV图像转换.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/11.视频的读取显示和保存.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/12.保存视频.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/2.获取图像的属性.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/3.生成指定大小的空图片.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/4.cvtColor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/4.cvtColor2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/4.访问和操作图像像素.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/5.图片的缩放与换色.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/6.图像ROI（region of interest）.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/7.转换颜色空间.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/8.几何变换之平移.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/8.几何变换之旋转.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/8.几何变换之缩放.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/9,绘图.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/ball.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/state.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/test1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/opencv使用/test_new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/other/Argparse使用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/other/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/other/斐波那契数列.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/1.基本使用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/10.分组.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/11.分组2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/12.绘制动态图.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/13.绘制动态图2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/14.绘制动态图3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/2.数据的统计与排序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/3.数据的筛选.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/4.pyplot绘制图形1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/5.pyplot绘制图形2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/6.seaborn的使用1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/7.seaborn的使用2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/8.数据索引的设置与复位.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/9.根据索引筛选数据.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/abc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/olympics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/过关题.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/pandas使用/过关题2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/1. 基础用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/2. Post的用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/3. Session会话维持.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/4. status_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/5. 证书.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/6. 代理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/7. 异常处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/8. 认证.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/calls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/interface.prop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/mParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/res_content.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/requests库/实例.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/1. Hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/2. MonkeyTool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/5. 登录Demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/TK.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/TK测试.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/gui2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/tkinter使用2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/usrs_info.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/tkinter使用/welcome.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/并发编程/1.1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/并发编程/1.2线程信号标志.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/并发编程/1.3multi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/并发编程/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/机器学习/abcd.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/机器学习/kNN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/机器学习/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/机器学习/线性回归2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/机器学习/线性回归Demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/1.类方法和静态方法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/2.私有化属性和方法的处理.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/3.类和类对象.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/abc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/abc2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/property的使用方式1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/property的使用方式2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/with的用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/1.继承基本概念.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/2.继承的访问权限.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/3.继承的查找顺序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/关于继承.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/三大特性/继承用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/内置方法__call__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/内置方法__setattr__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/内置方法__str__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/描述器使用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/描述器定义方式1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/描述器定义方式2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/测试类.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/类内置方法__setItem__等.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/类属性限制.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/类装饰器.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../advanced/面向对象/综合案例.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ADB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/ADB常用命令文档.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/AdbTools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/AndroidPerformance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/Android设备基本信息.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/Key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app-debug.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/build.prop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/memory.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appium/app-debug.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appium/simple_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appium/taidu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../appium/testdemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/1.字典的基础用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/2.字典的遍历与排序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/3.字典的浅复制.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/4.字典的常用方法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/5.使用内建函数sorted排序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/dict字典/6.使用operator.itemgetter排序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/1.[重要]列表的常见用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/2.list的切片.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/3.[重要]列表生成式.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/4.列表的遍历.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/5.列表的排序.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/6.随机数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/7.生成列表的方法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/list列表/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/1. os和os.path常用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/2. os.path常用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/3. os.open.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/4. os.system用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/5. 实际应用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/6.subprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/7.subprocess2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/devices.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/os模块/meminfo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/set集合/Set用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/set集合/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/set集合/集合基本用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/1.字符串的基础用法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/2.字符串的格式化.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/3.[重要]最常用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/4.字符串不可变.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/5.字符串的常用方法.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/str字符串/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/常用遍历/Python循环.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/dif.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/diff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/lines.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/pickle使用/Pickle使用.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/pickle使用/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/pickle使用/pickle_example.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/sysArgv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/对比文件具体内容1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/对比文件具体内容2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件对比.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件读取和写入/1.[重要]文件读写操作.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件读取和写入/2.文件操作序列化.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件读取和写入/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件读取和写入/age_name.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/文件读取和写入/name_age.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/2018_02_03.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/Pandas解析Excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/_BaseExcel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/excel.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/操作Excel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Excel/解析导入表.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Prop/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Prop/ids.prop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Prop/解析prop配置文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Xml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Xml/content.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Xml/解析xml格式文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Yaml/testYaml.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析Yaml/解析Yaml格式文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/解析json格式的字符串.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/文件读写/遍历指定目录文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/时间模块/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/时间模块/时间日历1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/时间模块/时间日历2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/时间模块/时间日历3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/时间模块/时间日历4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/正则/1.[重要]常用方式.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/正则/2. 正则的和split.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/正则/3. 实际应用1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/装饰器/1.嵌套函数.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/装饰器/2.闭包.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/装饰器/3.装饰器.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../basic/装饰器/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/TestReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/mailTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/yunche.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/MySqlHelper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/Play图片访问.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/Play所有图片的请求.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/mProgram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/modelJson.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/mtaidu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/wuta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/新定制页面.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/检查模型包是否一致.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/访问所有DAE文件.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taidu/访问数据库.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utils/AndroidTool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utils/Form2Json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utils/__init__.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FlaskDemo$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1536543368285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1536653140788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$FlaskDemo.coverage" NAME="FlaskDemo Coverage Results" MODIFIED="1534315960707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$Flask__main_py___1_.coverage" NAME="Flask (main.py) (1) Coverage Results" MODIFIED="1536023620191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$business.coverage" NAME="business Coverage Results" MODIFIED="1536030491197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$test.coverage" NAME="test Coverage Results" MODIFIED="1534414471132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$Flask__main_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1536113579762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1536653097160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front/utils" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1033987875">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="40" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="4" />
+          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="3" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.20" value="6" />
+          <entry key="project.open.time.21" value="3" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="44" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="12" />
+          <entry key="conf" value="2" />
+          <entry key="dummy" value="64" />
+          <entry key="html" value="15899" />
+          <entry key="json" value="40" />
+          <entry key="py" value="13817" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="15896" />
+          <entry key="JSON" value="40" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="Python" value="13829" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="conf" value="1" />
+          <entry key="html" value="98" />
+          <entry key="js" value="5" />
+          <entry key="json" value="7" />
+          <entry key="png" value="2" />
+          <entry key="py" value="140" />
+          <entry key="rnc" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="98" />
+          <entry key="Image" value="2" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="5" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="140" />
+          <entry key="RNG Compact" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="e#15#28#0" expanded="true" />
+                <marker date="1536543203214" expanded="true" signature="266:267" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="303" column="39" selection-start-line="303" selection-start-column="39" selection-end-line="303" selection-end-column="39" />
+              <folding>
+                <element signature="e#17#42#0" expanded="true" />
+                <marker date="1536819840227" expanded="true" signature="616:617" ph="..." />
+                <marker date="1536819840227" expanded="true" signature="4257:4349" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="13" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-264">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gunicorn.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mytb</find>
+      <find>addrow</find>
+      <find>btn-ok</find>
+      <find>add_div'</find>
+      <find>add_goods</find>
+      <find>add_div</find>
+      <find>status_code</find>
+      <find>car-result</find>
+      <find>carNu</find>
+      <find>add_cars</find>
+      <find>demand-cars</find>
+      <find>btn_publish</find>
+      <find>btn-publish-goods</find>
+      <find>form-business</find>
+      <find>demand_goods</find>
+      <find>demand-business</find>
+      <find>btn-publish-business</find>
+      <find>openI</find>
+      <find>btn-publish-carsell</find>
+      <find>getOpenIds</find>
+      <find>排放</find>
+      <find>err-carsell-detail</find>
+      <find>btn-publish</find>
+      <find>cb_openIds</find>
+      <find>btn</find>
+      <find>btn-publish-other</find>
+      <find>add-o</find>
+      <find>other-</find>
+      <find>cb</find>
+      <find>url</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/read_data.html" />
+        <option value="$PROJECT_DIR$/templates/detial.html" />
+        <option value="$PROJECT_DIR$/templates/art_list.html" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/new_article.html" />
+        <option value="$PROJECT_DIR$/templates/easyui/messager.html" />
+        <option value="$PROJECT_DIR$/templates/easyui/easyui.html" />
+        <option value="$PROJECT_DIR$/templates/easyui/easyui_panel.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/boot.html" />
+        <option value="$PROJECT_DIR$/apps/front/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/templates/index.html" />
+        <option value="$PROJECT_DIR$/apps/templates/login.html" />
+        <option value="$PROJECT_DIR$/apps/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/models.py" />
+        <option value="$PROJECT_DIR$/apps/front/views.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/front/templates/easyui/easyui.html" />
+        <option value="$PROJECT_DIR$/front/templates/new_article.html" />
+        <option value="$PROJECT_DIR$/front/static/datagrid_data1.json" />
+        <option value="$PROJECT_DIR$/front/models.py" />
+        <option value="$PROJECT_DIR$/front/templates/suite_detail.html" />
+        <option value="$PROJECT_DIR$/front/templates/login.html" />
+        <option value="$PROJECT_DIR$/front/templates/suite.html" />
+        <option value="$PROJECT_DIR$/front/templates/auto.html" />
+        <option value="$PROJECT_DIR$/front/templates/suite_neway.html" />
+        <option value="$PROJECT_DIR$/front/templates/suite_finance.html" />
+        <option value="$PROJECT_DIR$/views2.py" />
+        <option value="$PROJECT_DIR$/front/views2.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/front/templates/goods.html" />
+        <option value="$PROJECT_DIR$/front/templates/models.html" />
+        <option value="$PROJECT_DIR$/front/templates/index.html" />
+        <option value="$PROJECT_DIR$/front/templates/base.html" />
+        <option value="$PROJECT_DIR$/front/templates/suite_all.html" />
+        <option value="$PROJECT_DIR$/front/__init__.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/front/utils/utils.py" />
+        <option value="$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json" />
+        <option value="$PROJECT_DIR$/front/business.py" />
+        <option value="$PROJECT_DIR$/front/urls.py" />
+        <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/front/templates/suite_wx.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/front/forms.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/gunicorn.conf" />
+        <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/front/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="451" />
+    <option name="y" value="101" />
+    <option name="width" value="1615" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codes/chapter03-模板/template_inherit_demo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\python\FlaskDemo\front\utils" />
+      <recent name="D:\code\python\FlaskDemo\front" />
+      <recent name="D:\code\python\FlaskDemo\front\static" />
+      <recent name="D:\code\python\FlaskDemo\apps" />
+      <recent name="D:\code\python\FlaskDemo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\python\FlaskDemo\front\templates" />
+      <recent name="D:\code\python\FlaskDemo\front\static" />
+      <recent name="D:\code\python\FlaskDemo\front\static\easyui\themes\icons" />
+      <recent name="D:\code\python\FlaskDemo\front" />
+      <recent name="D:\code\python\FlaskDemo\front\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (wsgi.py)">
+    <configuration name="business" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/front" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/front/business.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/front/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/front/utils/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (wsgi.py)" type="Python.FlaskServer" factoryName="Flask server" singleton="true" temporary="true" nameIsGenerated="true">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
+      <option name="flaskDebug" value="true" />
+      <module name="FlaskDemo" />
+      <option name="target" value="$PROJECT_DIR$/wsgi.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Flask (wsgi.py)" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.business" />
+      <item itemvalue="Python.utils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (wsgi.py)" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.business" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="373ea3d8-684a-4ec7-90b4-438a694394c0" name="Default Changelist" comment="" />
+      <created>1532932563437</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532932563437</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.1735925" />
+      <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.20107238" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63538873" weight="0.46175638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21104816" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33109918" side_tool="true" weight="0.4305949" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25201073" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18838526" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.296034" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data2.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/datagrid_data1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="86" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="320" column="13" selection-start-line="320" selection-start-column="8" selection-end-line="320" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/easyui/messager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/bullet_disk.png" />
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/bullet_delete.png" />
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="30" column="26" selection-start-line="27" selection-start-column="24" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/views2.py" />
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_neway.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_finance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/werkzeug/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="602" selection-start-line="602" selection-end-line="602" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/read_data.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="880" column="28" selection-start-line="880" selection-start-column="13" selection-end-line="880" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/blueprints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/models.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-411">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="152" column="29" lean-forward="true" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="927" column="34" selection-start-line="927" selection-start-column="23" selection-end-line="927" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/env/anaconda/Lib/signal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combo/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combo/animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combobox/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/combobox_data1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/wrappers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="2294" selection-start-line="2294" selection-end-line="2294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8052">
+          <caret line="366" column="189" selection-start-line="366" selection-start-column="189" selection-end-line="366" selection-end-column="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/business.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3696">
+          <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1536645621890" expanded="true" signature="250:251" ph="..." />
+            <marker date="1536645621890" expanded="true" signature="250:255" ph="..." />
+            <marker date="1536645621890" expanded="true" signature="18540:18541" ph="..." />
+            <marker date="1536645621890" expanded="true" signature="18540:18918" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gunicorn.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#15#28#0" expanded="true" />
+            <marker date="1536543203214" expanded="true" signature="266:267" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="303" column="39" selection-start-line="303" selection-start-column="39" selection-end-line="303" selection-end-column="39" />
+          <folding>
+            <element signature="e#17#42#0" expanded="true" />
+            <marker date="1536819840227" expanded="true" signature="616:617" ph="..." />
+            <marker date="1536819840227" expanded="true" signature="4257:4349" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% block body %}
+    <script type="text/javascript">
+        $(function () {
+            $('#mytb').datagrid({
+                idField: "id",
+                iconCls: 'icon-edit',  //图标
+                border: true,  //表格是否显示边框
+                fitColumns: true,
+                {#fit:true,#}
+                url: "{{ url_for('front.suite_list') }}",
+                method: "get",
+                scrollbarSize: 0,
+                columns: [[
+                    {
+                        field: 'id', title: 'ID', width: 100, formatter: function (value, row, index) {
+                            console.log("value:" + value) // 当前列的值
+                            console.log("row:" + row.name) // 当前行的所有数据
+                            console.log("index:" + index)
+                            if (index % 2 == 0) { // 偶数行
+                                return "<span style='color:red'>" + row.id + "</span>";
+                            } else
+                                return row.id
+                        }
+                    },
+                    {field: 'name', title: '用例名称', width: 100},
+                    {field: 'comment', title: '用例描述', width: 200},
+                    {field: 'createTime', title: '创建时间', width: 100},
+                    {field: 'view', title: '操作', width: 100, formatter: formatOper}
+                ]],
+                pagination: true,//底部是否显示分页组件
+                pageSize: 5,   //表格中每页显示的行数
+                pageList: [5, 10, 15],
+                rownumbers: true,   //是否显示行号
+                singleSelect: true, // 只能单选
+                nowrap: false,
+                striped: true,  //奇偶行是否使用不同的颜色
+                loadMsg: '数据正在努力加载，请耐心等待...',   //加载数据时显示提示信息
+                frozenColumns: [[  //固定在表格左侧的栏
+                    {field: 'ck', checkbox: true},
+                ]],
+
+                toolbar: [{
+                    iconCls: 'icon-add',
+                    text: '添加',
+                    handler: function () { // 当点击添加时，执行handler代码
+                        $('#add_div').window({
+                            title: "添加",
+                            width: 500,
+                            height: 300,
+                            resizable: false,
+                            minimizable: false,
+                            collapsible: false,
+                            maximizable: false,
+                            modal: true
+                        })
+                        {#                        $.messager.show({
+                                                    title: "添加提示",
+                                                    msg: "成功添加一条记录",
+                                                    timeout: 3000,
+                                                    showType: "slide"
+                                                })#}
+                    }
+                }, '-', {
+                    iconCls: 'icon-edit',
+                    text: '编辑',
+                    handler: function () {
+                        alert('编辑按钮')
+                    }
+                }, '-', {
+                    iconCls: 'icon-remove',
+                    text: '删除',
+                    handler: function () {
+                        alert('编辑按钮')
+                    }
+                }]
+
+            });
+
+
+            function formatOper(val, row, index) {
+                {#console.log(val)#}
+                {#console.log(row.id)#}
+                {#console.log(index)#}
+                return '<a onclick="suiteDetail(' + row.id + ')" class="easyui-linkbutton" >查看详情</a>';
+            }
+
+
+            $('#tb_detail').datagrid({
+                iconCls: 'icon-edit',  //图标
+                border: true,  //表格是否显示边框
+                columns: [[
+                    {field: 'id', title: 'ID', width: 50, hidden: false},
+                    {field: 'testName', title: '步骤名称', width: 100},
+                    {field: 'element', title: '元素', width: 300},
+                    {field: 'index', title: '索引', width: 50},
+                    {field: 'findType', title: '查找方式', width: 100},
+                    {field: 'operateType', title: '操作方式', width: 80},
+                    {field: 'checkType', title: '断言方式', width: 100},
+                    {field: 'checkExp', title: '预期结果', width: 100},
+                ]],
+                nowrap: false,
+                striped: true,  //奇偶行是否使用不同的颜色
+                loadMsg: '数据正在努力加载，请稍后...',  //加载数据时显示提示信息
+            });
+
+
+            function suiteDetail(rowId) {
+                $.ajax({
+                    type: 'post',
+                    url: "{{ url_for('front.suite_detail') }}",
+                    data: {"id": rowId},
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#win').window('open');  // open a window
+                        $('#tb_detail').datagrid("loadData", data)
+                    },
+                    error: function (data) {
+                        alert('请求流程详情失败')
+                    }
+                })
+            }
+
+            {#  点击：确定  #}
+            $('#btn-ok').click(function () {
+                $.ajax({
+                    url: "{{ url_for('front.suite_detail') }}",
+                    type: "post",
+                    data: $('#my-form').serialize(),
+                    dataType: "json",
+                    success: function (result) {
+                        alert("点击确定")
+                        $('#add_div').hide()
+                    }
+                })
+            })
+
+
+        })
+    </script>
+
+    <table id="mytb" title="测试集合" style="width:800px;height:400px" data-options="rownumbers:true">
+    </table>
+
+
+    {#    <div id="win" class="easyui-window" title="详情" closed="true" style="width:770px;height:700px;"#}
+    {#         data-options="modal:true ">#}
+    {#        <p>测试流程步骤</p>#}
+    {#        <table id="tb_detail" width="750px" height="600px"></table>#}
+    {#    </div>#}
+
+    {#  添加窗口  #}
+    <div id="add_div" style="display: none">
+        <form id="my-form">
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+
+            <a id="btn-ok" class="easyui-linkbutton">确定</a>
+        </form>
+    </div>
+{% endblock %}

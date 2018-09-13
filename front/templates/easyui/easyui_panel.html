@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+
+
+{#    2. 创建面板程序,让我们创建面板右上角的的工具栏。#}
+    <script>
+        $(function () {
+            $('#mypanel').panel({
+                width: 500,
+                height: 150,
+                title: 'My Panel',
+                tools: [{
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        alert('new')
+                    }
+                }, {
+                    iconCls: 'icon-save',
+                    handler: function () {
+                        alert('save')
+                    }
+                }]
+            });
+        })
+
+    </script>
+
+
+</head>
+<body>
+
+{#1. 通过标签创建面板,通过标签创建更简单。添加'easyui-panel'类ID到<div/>标签。#}
+{#<div id="p" class="easyui-panel" title="My Panel"
+     style="width:500px;height:200px;padding:10px;background:#fafafa;"
+     data-options="iconCls:'icon-edit',closable:true,
+                collapsible:true,minimizable:true,maximizable:true">
+    <p>panel content.</p>
+    <p>panel content.</p>
+</div>#}
+
+<div id="mypanel" style="padding:10px;">
+    <p>panel content.</p>
+    <p>panel content.</p>
+</div>
+
+
+</body>
+</html>

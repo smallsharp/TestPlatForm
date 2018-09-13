@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {# 引入easyui #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+
+
+
+</head>
+<body>
+
+<h1>HHHHH</h1>
+
+<div class="easyui-panel" title="测试专用" style="width:400px;padding:10px 10px">
+
+    <p><a href="{{ url_for('front.easyui_message') }}" style="margin-bottom:20px">消息窗体</a></p>
+    <p><a href="{{ url_for('front.easyui_panel') }}" style="margin-bottom:20px">面板</a></p>
+
+</div>
+
+</body>
+</html>

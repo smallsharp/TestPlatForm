@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动化测试平台</title>
+    {# 引入easyui #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+</head>
+
+<body>
+
+<div id="win_demand" class="easyui-window" title="货源需求" style="width:900px;height:700px; "
+     data-options="modal:true,resizable:false,collapsible:false,closed:true ">
+
+    <div class="easyui-panel" title="填写如下字段" style="padding: 10px; width: max-content" > {# noheader="true" #}
+        <form id="form_goods" style="padding: 10px;borderWidth:2" data-options="">
+            <div style="padding: 10px" >
+                <label for="goodsName">货物名称:</label>
+                <input class="easyui-textbox" style="width:300px" value="手机" name="goodsName" id="goodsName">
+
+                <label for="startAddress">装货地址:</label>
+                <input class="easyui-textbox" style="width:300px" value="上海市青浦区华徐公路888号" name="startAddress">
+            </div>
+
+            <div style="padding: 10px">
+                <label for="email">卸货地址:</label>
+                <input class="easyui-textbox" style="width:300px" value="北京市海淀区" name="endAddress">
+                <label for="email">装车时间:</label>
+                <input class="easyui-textbox" style="width:300px" value="2018-12-31 11:30" name="carryGoodsTime">
+            </div>
+
+            <div style="padding: 10px">
+                <label for="email">货物体积:</label>
+                <input class="easyui-textbox" style="width:300px" value="22" name="carryVolume">
+                <label for="email">车长车型:</label>
+                <input class="easyui-textbox" style="width:300px" value="1.8米 半挂牵引车" name="carModel">
+            </div>
+
+            <div style="padding: 10px">
+                <label for="email">发布地点:</label>
+                <input class="easyui-textbox" style="width:300px" value="上海市青浦区双联路88号" name="addr">
+                <label for="email">有效期限:</label>
+                <input class="easyui-textbox" style="width:300px" value="2020-12-15" name="endDate">
+            </div>
+            <input type="text" hidden="true" value="o94HS5PrLEd6AeyLRM5XimFX90tU" name="openId">
+
+            <input id="btn_publish" class="easyui-linkbutton" type="submit" style="width: 200px;height: 30px"
+                   value="发布需求">
+        </form>
+    </div>
+
+{#    <div class="easyui-panel" title="测试结果" style="width: max-content">#}
+{#        <span>发布结果：</span>#}
+{#        <span id="result">成功</span>#}
+{#    </div>#}
+{##}
+{#    <div class="easyui-panel" title="结果分析" style="background: #eaced1">#}
+{##}
+{#    </div>#}
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+
+
+    <script>
+        $(function () {
+            $('#login').click(function () {
+                $.ajax({
+                    type: 'post',
+                    url:{{ url_for('front.login') }},
+                    cache: false,
+                    data: $('#ff').serialize(),
+                    dataType: 'json',
+                    {#验证表单字段#}
+                    success: function (result) {
+                        console.log('===>', result.data)
+                        console.log('type:', typeof(result))
+                        {#result = JSON.parse(result)  {# 如果dataType：text，则需要result = JSON.parse(result)，如果dataType：json，则不需要}#}
+                        console.log(result.retCode)
+                        $.messager.show({
+                            title: "success",
+                            msg: result.retMsg
+                        })
+                    },
+
+                    error: function (result) {
+                        alert('error');
+                        console.log('===>', result.data)
+                        console.log('type:', typeof(result))
+                        console.log(result.retCode)
+                        $.messager.show({
+                            title: "fail",
+                            msg: result.retMsg
+                        })
+                    }
+                });
+
+            }),
+
+                $('#login1').click(function () {
+                    alert('测试用');
+                });
+
+
+        })
+
+
+        $.extend($.fn.validatebox.defaults.rules, {
+            paramsLength: {
+                validator: function (value, param) {
+                    return value.length >= param[0] && value.length <= param[1]
+                },
+                message: '需要输入2-5个字符'
+            }
+        });
+
+    </script>
+</head>
+
+
+<body>
+
+<div class="easyui-panel" title="登录" style="width:100%;max-width:400px;padding:30px 60px;">
+
+    <form>
+
+        <div style="margin-bottom:20px">
+            <input class="easyui-textbox" name="phone" required=true missingMessage="账号必输项"
+                   validType='paramsLength[2,5]' style="width:100% "
+                   prompt="请输入账号">
+        </div>
+
+        <div style="margin-bottom:20px">
+            <input class="easyui-passwordbox" name="password" required=true missingMessage="密码必输项" prompt="请输入密码"
+                   style="width:100%">
+        </div>
+
+        <div style="margin-bottom:20px">
+            <input id='login' class="easyui-linkbutton" style="width:100%; height: 30px" value="登录"></input>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

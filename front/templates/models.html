@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <div id="win_demand" class="easyui-window" title="货源需求"
+         style="width:900px;height:700px; padding-left: 10px;padding-top: 10px "
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false">
+        <strong>填写如下信息</strong>
+        <div class="easyui-panel"> {# noheader="true" #}
+            <form id="form_goods">
+
+                <div style="padding: 10px; ">
+                    <label for="goodsName">货物名称:</label>
+                    <input class="easyui-textbox" style="width:300px" value="手机" name="goodsName" id="goodsName">
+
+                    <label for="startAddress">装货地址:</label>
+                    <input class="easyui-textbox" style="width:300px" value="上海市青浦区华徐公路888号" name="startAddress">
+                </div>
+
+                <div style="padding: 10px">
+                    <label for="email">卸货地址:</label>
+                    <input class="easyui-textbox" style="width:300px" value="北京市海淀区" name="endAddress">
+                    <label for="email">装车时间:</label>
+                    <input class="easyui-textbox" style="width:300px" value="2018-12-31 11:30"
+                           name="carryGoodsTime">
+                </div>
+
+                <div style="padding: 10px">
+                    <label for="email">货物体积:</label>
+                    <input class="easyui-textbox" style="width:300px" value="22" name="carryVolume">
+                    <label for="email">车长车型:</label>
+                    <input class="easyui-textbox" style="width:300px" value="1.8米 半挂牵引车" name="carModel">
+                </div>
+
+                <div style="padding: 10px">
+                    <label for="email">发布地点:</label>
+                    <input class="easyui-textbox" style="width:300px" value="上海市青浦区双联路88号" name="addr">
+                    <label for="email">有效期限:</label>
+                    <input class="easyui-textbox" style="width:300px" value="2020-12-15" name="endDate">
+                </div>
+                {#            <input type="text" hidden="true" value="o94HS5PrLEd6AeyLRM5XimFX90tU" name="openId"/>#}
+
+                <div style="padding: 10px">
+                    <span>openId:</span>
+                    <select id="cb_openIds" class="easyui-combobox" name="openId" style="width:280px;">
+                        <option value="o94HS5PrLEd6AeyLRM5XimFX90tU">o94HS5PrLEd6AeyLRM5XimFX90tU</option>
+                        <option value="o94HS5Amxfcwn9pgj-fvByTp70Do">o94HS5Amxfcwn9pgj-fvByTp70Do</option>
+                    </select>
+
+                    <a id="btn_publish" class="easyui-linkbutton" style="margin-left: 30px;width: 150px"
+                       data-options="iconCls:'icon-add'">点击发布</a>
+                </div>
+            </form>
+        </div>
+
+        <div style="height: 10px"></div>
+
+        <div class="easyui-panel" title="验证点" style="padding: 10px">
+            <div class="mdiv" style="padding-top: 10px">
+                <span>发布结果：</span>
+                <input id="add_result" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证需求详情：</span>
+                <input id="ck_demandinfo" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证我的需求：</span>
+                <input id="ck_mydemand" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证需求广场：</span>
+                <input id="ck_recommand" type="text" readonly=true/>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+        // 步骤
+        $('#tb_detail').datagrid({
+            iconCls: 'icon-edit',  //图标
+            border: true,  //表格是否显示边框
+            columns: [[
+                {field: 'id', title: 'ID', width: 50, hidden: false},
+                {field: 'testName', title: '步骤名称', width: 100},
+                {field: 'element', title: '元素', width: 300},
+                {field: 'index', title: '索引', width: 50},
+                {field: 'findType', title: '查找方式', width: 100},
+                {field: 'operateType', title: '操作方式', width: 80},
+                {field: 'checkType', title: '断言方式', width: 100},
+                {field: 'checkExp', title: '预期结果', width: 100},
+            ]],
+            nowrap: false,
+            striped: true,  //奇偶行是否使用不同的颜色
+            loadMsg: '数据正在努力加载，请稍后...',  //加载数据时显示提示信息
+        });
+
+        function formatOper(val, row, index) {
+            {#console.log(val)#}
+            {#console.log(row.id)#}
+            {#console.log(index)#}
+            return '<a onclick="suiteDetail(' + row.id + ')" class="easyui-linkbutton" >查看详情</a>';
+        }
+
+        function suiteDetail(rowId) {
+            $.ajax({
+                type: 'post',
+                url: "{{ url_for('front.suite_detail') }}",
+                data: {"id": rowId},
+                dataType: 'json',
+                success: function (data) {
+                    $('#win').window('open');  // open a window
+                    $('#tb_detail').datagrid("loadData", data)
+                },
+                error: function (data) {
+                    alert('请求流程详情失败')
+                }
+            })
+        }
+
+        $('#add_goods').click(function ({}) {
+            $('#win_demand').window('open');  // open a window
+            currentIndex = 0;
+        })
+
+        $('#add_cars').click(function ({}) {
+            $('#win_demand').window('open');  // open a window
+            currentIndex = 1;
+        })
+
+        $('#btn_publish').click(function () {
+            $.ajax({
+                type: "post",
+                url: "{{ url_for('front.add_goods') }}",
+                data: $('#form_goods').serialize(),
+                dataType: "json",
+                async: false,
+                success: function (result) {
+
+                    console.log(result)
+                    console.debug('result:', result)
+                    if (result.retCode == 0) {
+                        var succ_msg = "验证通过"
+                        var fail_msg = "验证失败"
+                        $('#add_result').val(result.retMsg);
+                        if (result.retData.isDemandChecked == 1) {
+                            $('#ck_demandinfo').val(succ_msg)
+                        } else {
+                            $('#ck_demandinfo').val(fail_msg)
+                        }
+                        if (result.retData.isInMydemand == 1) {
+                            $('#ck_mydemand').val(succ_msg)
+                        } else {
+                            $('#ck_mydemand').val(fail_msg)
+                        }
+                        if (result.retData.isInRecommand == 1) {
+                            $('#ck_recommand').val(succ_msg)
+                        } else {
+                            $('#ck_recommand').val(fail_msg)
+                        }
+                    } else {
+                        $('#add_result').val(result.retMsg)
+                    }
+                },
+                error: function (data, type, err) {
+                    console.log("ajax错误类型：" + type);
+                    console.log(err);
+                    alert("发布过程中出现异常,前往控制台查看错误信息！")
+                }
+            })
+        })
+
+
+        function isRealNum(val) {
+            // isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
+            if (val === "" || val == null) {
+                return false;
+            }
+            if (!isNaN(val)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+
+{% endblock %}

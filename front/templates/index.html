@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动化测试平台</title>
+    {# 引入easyui #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
+</head>
+
+<body class="easyui-layout">
+<div data-options="region:'north',border:false" ;
+     style="height: 50px; background: #23d7ea; padding: 10px">
+    <img src="{{ url_for('static',filename='images/logo.png') }}" width="100px" height="20px"/> 自动化测试平台
+</div>
+
+<div data-options="region:'west',split:true" style="width: 170px;">
+    <div class="easyui-accordion" data-options="fit:true,border:false">
+        <div title="测试管理" data-options="selected:true">
+            <div style="margin: 5px">
+                <ul class="tree easyui-tree" data-options="animate:true,lines:true" id="tt">
+                    <li data-options="iconCls:'icon-group'">
+                        <span>UI自动化测试</span>
+                        <ul>
+                            <li data-options="iconCls:'icon-group_add'" id="wx">
+                                <span id="ww">小程序</span>
+                            </li>
+                            <li data-options="iconCls:'icon-group_delete'" id="neway">
+                                <span>云车之家</span>
+                            </li>
+                            <li data-options="iconCls:'icon-group_edit'" id="finance">
+                                <span>业务系统</span>
+                            </li>
+                            <li data-options="iconCls:'icon-group_edit'" id="all">
+                                <span>集成测试</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {#        <div title="数据展示" style="padding: 10px;">#}
+        {#            content2#}
+        {#        </div>#}
+    </div>
+</div>
+
+<div data-options="region:'center'">
+    {# fit：自适应父容器大小   #}
+    <div id="tabs" class="easyui-tabs" data-options="tools:'#tab-tools',fit:true">
+        <div title="主页" data-options="iconCls:'icon-house'" style="padding: 20px">
+            <p>欢迎使用自动化测试平台</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        $('#tt').tree({
+            onClick: function (node) {
+                if ($('#tabs').tree('isLeaf', node.target)) { //判断是否是叶子节点
+                    {#var tab = $('#tt').tabs('getSelected');#}
+                    if ('wx' == node.id) {
+                        addTabs(node.text, "{{ url_for('front.suite_wx') }}")
+                    } else if ('neway' == node.id) {
+                        addTabs(node.text, "{{ url_for('front.suite_neway') }}")
+                    } else if ('finance' == node.id) {
+                        addTabs(node.text, "{{ url_for('front.suite_finance') }}")
+                    } else {
+                        addTabs(node.text, "{{ url_for('front.suite_all') }}")
+                    }
+                }
+            }
+        })
+
+
+        //生成新的选项卡
+        function addTabs(text, url) {
+
+            //若选项卡已存在，则选中该选项卡
+            if ($("#tabs").tabs('exists', text)) {
+                $("#tabs").tabs('select', text);
+            } else {
+                $("#tabs").tabs('add', {
+                    title: text,
+                    closable: true,
+                    href: url,
+                });
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

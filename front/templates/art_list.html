@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Success</p>
+
+
+
+<div class="easyui-panel" title="文章列表" style="width:400px;padding:10px 10px">
+
+    <ul>
+        {% for art in art_list %}
+        <li>   <p>文章标题：{{ art.title }}</p>  </li>
+        <li>   <p>文章内容：{{ art.content }}</p> </li>
+        <hr>
+        {% endfor %}
+    </ul>
+
+</div>
+
+</body>
+</html>
