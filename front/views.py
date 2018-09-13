@@ -214,58 +214,6 @@ def suite_detail():
          "index": "", "findType": "id"}]})
 
 
-@front.route('/add_goods/', methods=['POST'])
-def add_goods():
-    print(request.form.get('openId'), request.form.get('goodsName'))
-    data = {
-        "openId": request.form.get('openId'),
-        "goodsName": request.form.get('goodsName'),
-        "startAddress": request.form.get('startAddress'),
-        "endAddress": request.form.get('endAddress'),
-        "carryGoodsTime": request.form.get('carryGoodsTime'),
-        "carryVolume": request.form.get('carryVolume'),
-        "carModel": request.form.get('carModel'),
-        "addr": request.form.get('addr'),
-        "endDate": request.form.get('endDate')
-    }
-    isInMydemand = 0
-    isInRecommand = 0
-    isDemandChecked = 0
-    try:
-        res = requests.post(urls.url_add_goods, json=data)  # {"retCode":0,"retMsg":"","retData":{"id":"3044"}}
-        if res.status_code == 200:
-            res = json.loads(res.text)
-            if res.get('retCode') == 0:
-                retData = res['retData']
-                demandId = retData.get('id')
-
-                # 验证需求详情
-                if business.check_goods_info(demandId, data):
-                    print("验证需求详情！")
-                    isDemandChecked = 1
-
-                # 验证我的需求
-                if business.is_in_mydemand(demandId=demandId):
-                    print("验证我的需求！")
-                    isInMydemand = 1
-
-                # 验证需求广场
-                if business.is_in_recommand(demandId=demandId):
-                    print("验证需求广场！")
-                    isInRecommand = 1
-                return jsonify({"retCode": 0, "retMsg": "success",
-                                "retData": {"isInMydemand": isInMydemand, "isInRecommand": isInRecommand,
-                                            "isDemandChecked": isDemandChecked}})
-            else:  # 发布需求时，retCode!=0 的情况
-                return jsonify(
-                    {"retCode": res.get('retCode'), "retMsg": res.get('retMsg'), "retData": res.get('retData')})
-        else:  # 接口请求失败
-            return jsonify({"retCode": 90, "retMsg": "请求过程中出现异常", "retData": None})
-
-    except Exception as e:  # 其他异常
-        return jsonify({"retCode": 99, "retMsg": str(e), "retData": None})
-
-
 @front.route('/delDemands/', methods=['POST'])
 def delDemands():
     openId = request.form.get('openId')

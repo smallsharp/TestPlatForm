@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/front/templates/suite_wx.html" line="238" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="373ea3d8-684a-4ec7-90b4-438a694394c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/templates/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TesterHome/front/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TesterHome/server/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../flasktest/templates/index.html" afterDir="false" />
@@ -23,6 +18,14 @@
       <change beforePath="$PROJECT_DIR$/../.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.pydevproject" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/business.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/suite_wx.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/suite_wx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gunicorn.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/1.基础用法.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/2.制作新浪新闻网络爬虫.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/__init__.py" beforeDir="false" />
@@ -413,144 +416,84 @@
           <entry key="Python Console" value="12" />
           <entry key="conf" value="2" />
           <entry key="dummy" value="64" />
-          <entry key="html" value="15899" />
+          <entry key="html" value="16154" />
           <entry key="json" value="40" />
-          <entry key="py" value="13817" />
+          <entry key="py" value="13898" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="15896" />
+          <entry key="HTML" value="16151" />
           <entry key="JSON" value="40" />
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="13829" />
+          <entry key="Python" value="13910" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="1" />
-          <entry key="html" value="98" />
+          <entry key="html" value="101" />
           <entry key="js" value="5" />
           <entry key="json" value="7" />
           <entry key="png" value="2" />
-          <entry key="py" value="140" />
+          <entry key="py" value="146" />
           <entry key="rnc" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="98" />
+          <entry key="HTML" value="101" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="140" />
+          <entry key="Python" value="146" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="25" />
-              <folding>
-                <element signature="e#15#28#0" expanded="true" />
-                <marker date="1536543203214" expanded="true" signature="266:267" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="303" column="39" selection-start-line="303" selection-start-column="39" selection-end-line="303" selection-end-column="39" />
-              <folding>
-                <element signature="e#17#42#0" expanded="true" />
-                <marker date="1536819840227" expanded="true" signature="616:617" ph="..." />
-                <marker date="1536819840227" expanded="true" signature="4257:4349" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="13" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gunicorn.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.53208953">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="253">
+                  <caret line="645" column="57" selection-start-line="645" selection-start-column="57" selection-end-line="645" selection-end-column="57" />
+                  <folding>
+                    <element signature="e#5525#5545#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="297">
+                  <caret line="482" column="42" selection-start-line="482" selection-end-line="483" />
+                  <folding>
+                    <element signature="e#7753#7773#0#HTML" expanded="true" />
+                    <element signature="e#7833#7854#0#HTML" expanded="true" />
+                    <element signature="e#7946#7965#0#HTML" expanded="true" />
+                    <element signature="e#11608#11629#0#HTML" expanded="true" />
+                    <element signature="e#11721#11740#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -563,23 +506,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mytb</find>
-      <find>addrow</find>
-      <find>btn-ok</find>
-      <find>add_div'</find>
-      <find>add_goods</find>
-      <find>add_div</find>
       <find>status_code</find>
-      <find>car-result</find>
       <find>carNu</find>
       <find>add_cars</find>
       <find>demand-cars</find>
       <find>btn_publish</find>
-      <find>btn-publish-goods</find>
       <find>form-business</find>
       <find>demand_goods</find>
       <find>demand-business</find>
-      <find>btn-publish-business</find>
       <find>openI</find>
       <find>btn-publish-carsell</find>
       <find>getOpenIds</find>
@@ -593,10 +527,19 @@
       <find>other-</find>
       <find>cb</find>
       <find>url</find>
+      <find>btn-publish-carse</find>
+      <find>ck-car-info</find>
+      <find>ck-car-mydemand</find>
+      <find>car-result</find>
+      <find>btn-publish-cars</find>
+      <find>err-cars-detail</find>
+      <find>err-carsell</find>
+      <find>btn-publish-business</find>
+      <find>btn-publish-goods</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -642,16 +585,16 @@
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/front/utils/utils.py" />
         <option value="$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json" />
-        <option value="$PROJECT_DIR$/front/business.py" />
         <option value="$PROJECT_DIR$/front/urls.py" />
-        <option value="$PROJECT_DIR$/server/views.py" />
-        <option value="$PROJECT_DIR$/front/templates/suite_wx.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/front/forms.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/gunicorn.conf" />
+        <option value="$PROJECT_DIR$/front/business.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
         <option value="$PROJECT_DIR$/front/views.py" />
+        <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/front/templates/suite_wx.html" />
       </list>
     </option>
   </component>
@@ -661,7 +604,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="451" />
     <option name="y" value="101" />
     <option name="width" value="1615" />
@@ -681,6 +624,16 @@
             <path>
               <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -839,10 +792,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.1735925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.101876676" />
       <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.20107238" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -856,7 +809,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33109918" side_tool="true" weight="0.4305949" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.103666246" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1126,41 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8052">
-          <caret line="366" column="189" selection-start-line="366" selection-start-column="189" selection-end-line="366" selection-end-column="189" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/business.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3696">
-          <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1536645621890" expanded="true" signature="250:251" ph="..." />
-            <marker date="1536645621890" expanded="true" signature="250:255" ph="..." />
-            <marker date="1536645621890" expanded="true" signature="18540:18541" ph="..." />
-            <marker date="1536645621890" expanded="true" signature="18540:18918" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,13 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gunicorn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1192,18 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="303" column="39" selection-start-line="303" selection-start-column="39" selection-end-line="303" selection-end-column="39" />
-          <folding>
-            <element signature="e#17#42#0" expanded="true" />
-            <marker date="1536819840227" expanded="true" signature="616:617" ph="..." />
-            <marker date="1536819840227" expanded="true" signature="4257:4349" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1211,13 +1114,6 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1235,12 +1131,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gunicorn.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        <state relative-caret-position="330">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5236">
+          <caret line="256" column="60" lean-forward="true" selection-start-line="256" selection-start-column="60" selection-end-line="256" selection-end-column="60" />
+          <folding>
+            <element signature="e#17#42#0" expanded="true" />
+            <marker date="1536827822474" expanded="true" signature="616:617" ph="..." />
+            <marker date="1536827822474" expanded="true" signature="4257:4349" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="229" column="45" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/business.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1536827003509" expanded="true" signature="250:251" ph="..." />
+            <marker date="1536827003509" expanded="true" signature="250:255" ph="..." />
+            <marker date="1536827003509" expanded="true" signature="18540:18541" ph="..." />
+            <marker date="1536827003509" expanded="true" signature="18540:18918" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="645" column="57" selection-start-line="645" selection-start-column="57" selection-end-line="645" selection-end-column="57" />
+          <folding>
+            <element signature="e#5525#5545#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -13,6 +13,65 @@ def demand_model():
     return render_template('models.html')
 
 
+@server.route('/add_goods/', methods=['POST'])
+def add_goods():
+    """
+    发布货源，并分析检查点
+    :return: dict
+    """
+    print(request.form.get('openId'), request.form.get('goodsName'))
+    data = {
+        "openId": request.form.get('openId'),
+        "goodsName": request.form.get('goodsName'),
+        "startAddress": request.form.get('startAddress'),
+        "endAddress": request.form.get('endAddress'),
+        "carryGoodsTime": request.form.get('carryGoodsTime'),
+        "carryVolume": request.form.get('carryVolume'),
+        "carModel": request.form.get('carModel'),
+        "addr": request.form.get('addr'),
+        "endDate": request.form.get('endDate')
+    }
+    isInMydemand = 0
+    isInRecommand = 0
+    isDemandChecked = 0
+    try:
+        res = requests.post(urls.url_add_goods, json=data)  # {"retCode":0,"retMsg":"","retData":{"id":"3044"}}
+        if res.status_code == 200:
+            res = json.loads(res.text)
+            if res.get('retCode') == 0:
+                retData = res['retData']
+                demandId = retData.get('id')
+
+                # 验证需求详情
+                print("验证需求详情！")
+                retMsg = ""
+                if business.check_demand_info(demandId, data).get("retCode") == 0:
+                    isDemandChecked = 1
+                else:
+                    retMsg = business.check_demand_info(demandId, data).get("retMsg")
+
+                # 验证我的需求
+                if business.is_in_mydemand(demandId=demandId):
+                    print("验证我的需求！")
+                    isInMydemand = 1
+
+                # 验证需求广场
+                if business.is_in_recommand(demandId=demandId):
+                    print("验证需求广场！")
+                    isInRecommand = 1
+                return jsonify({"retCode": 0, "retMsg": retMsg,
+                                "retData": {"isInMydemand": isInMydemand, "isInRecommand": isInRecommand,
+                                            "isDemandChecked": isDemandChecked}})
+            else:  # 发布需求时，retCode!=0 的情况
+                return jsonify(
+                    {"retCode": res.get('retCode'), "retMsg": res.get('retMsg'), "retData": res.get('retData')})
+        else:  # 接口请求失败
+            return jsonify({"retCode": 90, "retMsg": "请求过程中出现异常", "retData": None})
+
+    except Exception as e:  # 其他异常
+        return jsonify({"retCode": 99, "retMsg": str(e), "retData": None})
+
+
 @server.route('/demand/addCars', methods=["get", "post"])
 def add_cars():
     data = {
@@ -43,9 +102,13 @@ def add_cars():
                 retData = res['retData']
                 demandId = retData.get('id')
 
+                # 验证需求详情
                 print("验证需求详情！")
-                if business.check_car_info(demandId, params=data).get("retCode") == 0:
+                retMsg = ""
+                if business.check_demand_info(demandId, data).get("retCode") == 0:
                     isDemandChecked = 1
+                else:
+                    retMsg = business.check_demand_info(demandId, data).get("retMsg")
 
                 # 验证我的需求
                 if business.is_in_mydemand(demandId=demandId):
@@ -57,7 +120,7 @@ def add_cars():
                     print("验证需求广场！")
                     isInRecommand = 1
 
-                return jsonify({"retCode": 0, "retMsg": "success",
+                return jsonify({"retCode": 0, "retMsg": retMsg,
                                 "retData": {"isInMydemand": isInMydemand, "isInRecommand": isInRecommand,
                                             "isDemandChecked": isDemandChecked}})
             return jsonify(
@@ -101,11 +164,13 @@ def add_business():
                 retData = res['retData']
                 demandId = retData.get('id')
 
+                # 验证需求详情
                 print("验证需求详情！")
-                if business.check_business_info(demandId, data).get("retCode") == 0:
+                retMsg = ""
+                if business.check_demand_info(demandId, data).get("retCode") == 0:
                     isDemandChecked = 1
                 else:
-                    retMsg = business.check_business_info(demandId, data).get("retMsg")
+                    retMsg = business.check_demand_info(demandId, data).get("retMsg")
 
                 # 验证我的需求
                 if business.is_in_mydemand(demandId=demandId):
@@ -126,18 +191,6 @@ def add_business():
     except Exception as e:
         print(e)
         return jsonify({"retCode": 99, "retMsg": str(e), "retData": None})
-
-
-@server.route('/getOpenIds', methods=["get", "post"])
-def getOpenIds():
-    return jsonify([{
-        "id": "o94HS5PrLEd6AeyLRM5XimFX90tU",
-        "text": "o94HS5PrLEd6AeyLRM5XimFX90tU",
-        "selected": True
-    }, {
-        "id": "o94HS5Amxfcwn9pgj-fvByTp70Do",
-        "text": "o94HS5Amxfcwn9pgj-fvByTp70Do"
-    }])
 
 
 @server.route('/demand/addCarSell', methods=["get", "post"])
@@ -174,10 +227,10 @@ def add_carsell():
                 demandId = retData.get('id')
 
                 print("验证需求详情！")
-                if business.check_carsell(demandId, data).get("retCode") == 0:
+                if business.check_demand_info(demandId, data).get("retCode") == 0:
                     isDemandChecked = 1
                 else:
-                    retMsg = business.check_carsell(demandId, data).get("retMsg")
+                    retMsg = business.check_demand_info(demandId, data).get("retMsg")
 
                 # 验证我的需求
                 if business.is_in_mydemand(demandId=demandId):
@@ -238,10 +291,10 @@ def add_other():
 
                 print("验证需求详情！")
                 retMsg = ""
-                if business.check_carsell(demandId, data).get("retCode") == 0:
+                if business.check_demand_info(demandId, data).get("retCode") == 0:
                     isDemandChecked = 1
                 else:
-                    retMsg = business.check_carsell(demandId, data).get("retMsg")
+                    retMsg = business.check_demand_info(demandId, data).get("retMsg")
 
                 # 验证我的需求
                 if business.is_in_mydemand(demandId=demandId):
@@ -267,3 +320,19 @@ def add_other():
     except Exception as e:
         print(e)
         return jsonify({"retCode": 99, "retMsg": str(e), "retData": None})
+
+
+
+@server.route('/getOpenIds', methods=["get", "post"])
+def getOpenIds():
+    return jsonify([{
+        "id": "o94HS5PrLEd6AeyLRM5XimFX90tU",
+        "text": "o94HS5PrLEd6AeyLRM5XimFX90tU",
+        "selected": True
+    }, {
+        "id": "o94HS5Amxfcwn9pgj-fvByTp70Do",
+        "text": "o94HS5Amxfcwn9pgj-fvByTp70Do"
+    }, {
+        "id": "o94HS5ODKlPjrGety5Ocz18yGnz4",
+        "text": "o94HS5ODKlPjrGety5Ocz18yGnz4"
+    }])

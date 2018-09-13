@@ -143,7 +143,7 @@ def check_business_info(demandId, reqParams):
 
 
 
-def check_carsell(demandId, reqParams):
+def check_demand_info(demandId, reqParams):
     """
     判断请求参数 和 返回参数是否一致
     :param demandId: 需求id

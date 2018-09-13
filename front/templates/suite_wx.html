@@ -104,6 +104,13 @@
                     <input id="ck_recommand" type="text" readonly=true/>
                 </div>
             </div>
+
+            <div style="height: 10px"></div>
+
+            <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
+                <textarea id="err-goods-detail" cols="80" rows="6" style="resize:none"></textarea>
+            </div>
+
         </div>
     </div>
 
@@ -139,20 +146,26 @@
         <div class="easyui-panel" title="验证点" style="padding: 10px">
             <div class="mdiv" style="padding-top: 10px">
                 <span>发布结果：</span>
-                <input id="car-result" type="text" readonly=true/>
+                <input id="cars-result" type="text" readonly=true/>
             </div>
             <div class="mdiv" style="padding-top: 10px">
                 <span>验证需求详情：</span>
-                <input id="ck-car-info" type="text" readonly=true/>
+                <input id="ck-cars-info" type="text" readonly=true/>
             </div>
             <div class="mdiv" style="padding-top: 10px">
                 <span>验证我的需求：</span>
-                <input id="ck-mydemand" type="text" readonly=true/>
+                <input id="ck-cars-mydemand" type="text" readonly=true/>
             </div>
             <div class="mdiv" style="padding-top: 10px">
                 <span>验证需求广场：</span>
-                <input id="ck-recommand" type="text" readonly=true/>
+                <input id="ck-cars-recommand" type="text" readonly=true/>
             </div>
+        </div>
+
+        <div style="height: 10px"></div>
+
+        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
+            <textarea id="err-cars-detail" cols="80" rows="6" style="resize:none"></textarea>
         </div>
 
     </div>
@@ -236,8 +249,8 @@
 
         <div style="height: 10px"></div>
 
-        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-panel">
-            <input type="text" id="err-detail" style="width: 400px;padding-top: 10px" data-options="multiline:true">
+        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
+            <textarea id="err-business-detail" cols="80" rows="6" style="resize:none"></textarea>
         </div>
 
     </div>
@@ -321,7 +334,7 @@
 
         <div style="height: 10px"></div>
 
-        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
+        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-cars-panel">
             <textarea id="err-carsell-detail" cols="80" rows="6" style="resize:none"></textarea>
         </div>
 
@@ -345,8 +358,7 @@
                         <option value="10">求职</option>
                         <option value="4">招聘</option>
                     </select>
-
-
+                </form>
             </div>
 
 
@@ -415,6 +427,9 @@
 
     <script type="text/javascript">
 
+        var succ_msg = "验证通过"
+        var fail_msg = "验证失败"
+
         $(function () {
             {# 发布货源 #}
             $('#add_goods').click(function ({}) {
@@ -425,7 +440,7 @@
             $('#btn-publish-goods').click(function () {
                 $.ajax({
                     type: "post",
-                    url: "{{ url_for('front.add_goods') }}",
+                    url: "{{ url_for('server.add_goods') }}",
                     data: $('#form_goods').serialize(),
                     dataType: "json",
                     async: false,
@@ -435,24 +450,53 @@
                         if (result.retCode == 0) {
                             var succ_msg = "验证通过"
                             var fail_msg = "验证失败"
-                            $('#add_result').val(result.retMsg);
+
+                            // 发布结果
+                            $('#add_result').val("发布成功");
+                            // 需求详情
                             if (result.retData.isDemandChecked == 1) {
                                 $('#ck_demandinfo').val(succ_msg)
                             } else {
                                 $('#ck_demandinfo').val(fail_msg)
+                                $('#ck_demandinfo').attr("style", "color:red;");
+
                             }
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                var s = ""
+                                for (let i = 0; i < result.retMsg.length; i++) {
+                                    s += result.retMsg[i] + "\n"
+                                }
+                                // 错误信息赋值
+                                $('#err-goods-detail').text(s);
+                                // 将值 设置为红色
+                                $('#err-goods-detail').attr("style", "color:red;");
+
+                            }
+
+                            // 检查是否在我的需求中
                             if (result.retData.isInMydemand == 1) {
                                 $('#ck_mydemand').val(succ_msg)
                             } else {
                                 $('#ck_mydemand').val(fail_msg)
+                                $('#ck_mydemand').attr("style", "color:red;");
+
                             }
+
+                            // 检查是否在推荐列表
                             if (result.retData.isInRecommand == 1) {
                                 $('#ck_recommand').val(succ_msg)
                             } else {
                                 $('#ck_recommand').val(fail_msg)
+                                $('#ck_recommand').attr("style", "color:red;");
+
                             }
                         } else {
                             $('#add_result').val(result.retMsg)
+                            $('#ck_demandinfo').val("")
+                            $('#ck_mydemand').val("")
+                            $('#ck_recommand').val("")
                         }
                     },
                     error: function (data, type, err) {
@@ -489,29 +533,49 @@
                         console.log(result)
                         console.debug('result:', result)
                         if (result.retCode == 0) {
-                            var succ_msg = "验证通过"
-                            var fail_msg = "验证失败"
-                            $('#car-result').val(result.retMsg);
+                            // 发布结果
+                            $('#cars-result').val("发布成功");
+                            // 需求详情
                             if (result.retData.isDemandChecked == 1) {
-                                $('#ck-car-info').val(succ_msg)
+                                $('#ck-cars-info').val(succ_msg)
                             } else {
-                                $('#ck-car-info').val(fail_msg)
+                                $('#ck-cars-info').val(fail_msg)
+                                $('#ck-cars-info').attr("style", "color:red;");
+
                             }
+
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                var s = ""
+                                for (let i = 0; i < result.retMsg.length; i++) {
+                                    s += result.retMsg[i] + "\n"
+                                }
+                                // 错误信息赋值
+                                $('#err-cars-detail').text(s);
+                                // 将值 设置为红色
+                                $('#err-cars-detail').attr("style", "color:red;");
+
+                            }
+
+                            // 检查是否在我的需求中
                             if (result.retData.isInMydemand == 1) {
-                                $('#ck-mydemand').val(succ_msg)
+                                $('#ck-cars-mydemand').val(succ_msg)
                             } else {
-                                $('#ck-mydemand').val(fail_msg)
+                                $('#ck-cars-mydemand').val(fail_msg)
                             }
+
+                            // 检查是否在推荐列表
                             if (result.retData.isInRecommand == 1) {
-                                $('#ck-recommand').val(succ_msg)
+                                $('#ck-cars-recommand').val(succ_msg)
                             } else {
-                                $('#ck-recommand').val(fail_msg)
+                                $('#ck-cars-recommand').val(fail_msg)
                             }
                         } else {
-                            $('#car-result').val(result.retMsg)
-                            $('#ck-car-info').val("")
-                            $('#ck-mydemand').val("")
-                            $('#ck-recommand').val("")
+                            $('#cars-result').val(result.retMsg)
+                            $('#ck-cars-info').val("")
+                            $('#ck-cars-mydemand').val("")
+                            $('#ck-cars-recommand').val("")
                         }
                     },
                     error: function (data, type, err) {
@@ -548,9 +612,6 @@
                     success: function (result) {
                         console.log(result)
                         if (result.retCode == 0) {
-                            var succ_msg = "验证通过"
-                            var fail_msg = "验证失败"
-
                             // 发布结果
                             $('#business-result').val("发布成功");
 
@@ -559,23 +620,31 @@
                                 $('#ck-business-info').val(succ_msg)
                             } else {
                                 $('#ck-business-info').val(fail_msg)
+                                $('#ck-business-info').attr("style", "color:red;");
+
                             }
                             // 检查需求异常日志
                             console.log(result.retMsg)
                             if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
-                                $('#err-detail').val(result.retMsg)
+                                $('#err-business-detail').val(result.retMsg)
+                                $('#err-business-detail').attr("style", "color:red;");
+
                             }
                             // 检查是否在我的需求中
                             if (result.retData.isInMydemand == 1) {
                                 $('#ck-business-mydemand').val(succ_msg)
                             } else {
                                 $('#ck-business-mydemand').val(fail_msg)
+                                $('#ck-business-mydemand').attr("style", "color:red;");
+
                             }
                             // 检查是否在推荐列表
                             if (result.retData.isInRecommand == 1) {
                                 $('#ck-business-recommand').val(succ_msg)
                             } else {
                                 $('#ck-business-recommand').val(fail_msg)
+                                $('#ck-business-recommand').attr("style", "color:red;");
+
                             }
                         } else {
                             $('#business-result').val(result.retMsg)
