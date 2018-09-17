@@ -336,3 +336,11 @@ def getOpenIds():
         "id": "o94HS5ODKlPjrGety5Ocz18yGnz4",
         "text": "o94HS5ODKlPjrGety5Ocz18yGnz4"
     }])
+
+
+@server.route('/editMobileAuth',methods=['post'])
+def edit_mobileAuth():
+    # from front.utils import MysqlUtil
+    # db1 = MysqlUtil(host='127.0.0.1', user='root', password='root', database='test', charset='utf8')
+
+    pass

@@ -249,7 +249,9 @@ def del_cache():
     uid = request.args.get('uid')
     print(uid)
     if uid:
-        res = requests.get(urls.url_del_cache, uid)
+        res = requests.get(urls.url_del_cache, {"uid": uid})
+        # https://betawx.yunchehome.com/Config/clearUserCache?uid=6666
+        print(res.url)
         if res.status_code == 200:
             return jsonify({"retCode": 0, "retMsg": "success"})
         return jsonify({"retCode": 98, "retMsg": res.status_code})
