@@ -322,7 +322,6 @@ def add_other():
         return jsonify({"retCode": 99, "retMsg": str(e), "retData": None})
 
 
-
 @server.route('/getOpenIds', methods=["get", "post"])
 def getOpenIds():
     return jsonify([{
@@ -338,9 +337,22 @@ def getOpenIds():
     }])
 
 
-@server.route('/editMobileAuth',methods=['post'])
+@server.route('/editMobileAuth', methods=['post'])
 def edit_mobileAuth():
-    # from front.utils import MysqlUtil
-    # db1 = MysqlUtil(host='127.0.0.1', user='root', password='root', database='test', charset='utf8')
+    uid = request.form.get('uid')
+    type = request.form.get('type')
+    if not uid or not type:
+        return jsonify({"retCode": -1, "retMsg": "uid 或 type不能为空"})
 
-    pass
+    from front.utils import mysqlUtil
+
+    # sql = "SELECT * FROM user_card where mobile = %s"
+    sql = "UPDATE user_card set isMobileAuth=%s where uid = %s"
+    db = mysqlUtil.MysqlCommand(host='192.168.40.67', user='dbdev', password='123456', database='api_business_card',
+                                charset='utf8')
+
+    # res = db.runQuery(sql,"18521035133")
+    if db.runCud(sql, (type, uid)):
+        return jsonify({"retCode": 0, "retMsg": "success"})
+    db.close()
+    return jsonify({"retCode": 2, "retMsg": "error"})

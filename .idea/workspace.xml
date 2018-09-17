@@ -18,14 +18,9 @@
       <change beforePath="$PROJECT_DIR$/../.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.pydevproject" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/business.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/business.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/suite_wx.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/suite_wx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunicorn.conf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/1.基础用法.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/2.制作新浪新闻网络爬虫.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/__init__.py" beforeDir="false" />
@@ -365,8 +360,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FlaskDemo$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1536543368285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/FlaskDemo$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1536653140788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$MysqlUtil2.coverage" NAME="MysqlUtil2 Coverage Results" MODIFIED="1537173932543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front/utils" />
     <SUITE FILE_PATH="coverage/FlaskDemo$FlaskDemo.coverage" NAME="FlaskDemo Coverage Results" MODIFIED="1534315960707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlaskDemo$Flask__main_py___1_.coverage" NAME="Flask (main.py) (1) Coverage Results" MODIFIED="1536023620191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$MysqlUtil.coverage" NAME="MysqlUtil Coverage Results" MODIFIED="1537173769035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front/utils" />
     <SUITE FILE_PATH="coverage/FlaskDemo$business.coverage" NAME="business Coverage Results" MODIFIED="1536030491197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front" />
     <SUITE FILE_PATH="coverage/FlaskDemo$test.coverage" NAME="test Coverage Results" MODIFIED="1534414471132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlaskDemo$Flask__main_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1536113579762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -390,11 +387,11 @@
     <session id="-1033987875">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="4" />
+          <entry key="project.open.time.16" value="5" />
           <entry key="project.open.time.17" value="4" />
           <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.19" value="2" />
@@ -408,92 +405,78 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="12" />
           <entry key="conf" value="2" />
-          <entry key="dummy" value="64" />
-          <entry key="html" value="16154" />
+          <entry key="dummy" value="87" />
+          <entry key="html" value="16584" />
           <entry key="json" value="40" />
-          <entry key="py" value="13898" />
+          <entry key="py" value="14496" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="16151" />
+          <entry key="HTML" value="16581" />
           <entry key="JSON" value="40" />
-          <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Python" value="13910" />
+          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="Python" value="14508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="1" />
-          <entry key="html" value="101" />
+          <entry key="html" value="103" />
           <entry key="js" value="5" />
           <entry key="json" value="7" />
-          <entry key="png" value="2" />
-          <entry key="py" value="146" />
+          <entry key="png" value="10" />
+          <entry key="py" value="156" />
           <entry key="rnc" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="101" />
-          <entry key="Image" value="2" />
+          <entry key="HTML" value="103" />
+          <entry key="Image" value="10" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="146" />
+          <entry key="Python" value="156" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53208953">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="645" column="57" selection-start-line="645" selection-start-column="57" selection-end-line="645" selection-end-column="57" />
-                  <folding>
-                    <element signature="e#5525#5545#0#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="297">
-                  <caret line="482" column="42" selection-start-line="482" selection-end-line="483" />
-                  <folding>
-                    <element signature="e#7753#7773#0#HTML" expanded="true" />
-                    <element signature="e#7833#7854#0#HTML" expanded="true" />
-                    <element signature="e#7946#7965#0#HTML" expanded="true" />
-                    <element signature="e#11608#11629#0#HTML" expanded="true" />
-                    <element signature="e#11721#11740#0#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1446">
+              <caret line="889" column="56" selection-start-line="889" selection-start-column="56" selection-end-line="889" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+              <folding>
+                <marker date="1537175801664" expanded="true" signature="13377:13381" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -506,8 +489,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>status_code</find>
-      <find>carNu</find>
       <find>add_cars</find>
       <find>demand-cars</find>
       <find>btn_publish</find>
@@ -534,8 +515,10 @@
       <find>btn-publish-cars</find>
       <find>err-cars-detail</find>
       <find>err-carsell</find>
-      <find>btn-publish-business</find>
       <find>btn-publish-goods</find>
+      <find>btn-publish-business</find>
+      <find>del</find>
+      <find>edit-mobile-type</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -544,10 +527,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/read_data.html" />
-        <option value="$PROJECT_DIR$/templates/detial.html" />
-        <option value="$PROJECT_DIR$/templates/art_list.html" />
-        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/templates/new_article.html" />
         <option value="$PROJECT_DIR$/templates/easyui/messager.html" />
         <option value="$PROJECT_DIR$/templates/easyui/easyui.html" />
@@ -585,16 +564,20 @@
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/front/utils/utils.py" />
         <option value="$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json" />
-        <option value="$PROJECT_DIR$/front/urls.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/front/forms.py" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/gunicorn.conf" />
         <option value="$PROJECT_DIR$/front/business.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/front/templates/boot.html" />
+        <option value="$PROJECT_DIR$/front/urls.py" />
         <option value="$PROJECT_DIR$/front/views.py" />
-        <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/server/dbconfig.py" />
+        <option value="$PROJECT_DIR$/front/utils/MysqlUtil2.py" />
+        <option value="$PROJECT_DIR$/front/utils/mysqlUtil.py" />
         <option value="$PROJECT_DIR$/front/templates/suite_wx.html" />
+        <option value="$PROJECT_DIR$/server/views.py" />
       </list>
     </option>
   </component>
@@ -604,10 +587,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="451" />
-    <option name="y" value="101" />
-    <option name="width" value="1615" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-119" />
+    <option name="y" value="365" />
+    <option name="width" value="1929" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -633,7 +616,8 @@
             <path>
               <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -651,19 +635,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\python\FlaskDemo\front\utils" />
+      <recent name="D:\code\python\FlaskDemo\front\templates" />
+      <recent name="D:\code\python\FlaskDemo\front\static" />
+      <recent name="D:\code\python\FlaskDemo\front\static\easyui\themes\icons" />
+      <recent name="D:\code\python\FlaskDemo\front" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\code\python\FlaskDemo\front\utils" />
       <recent name="D:\code\python\FlaskDemo\front" />
       <recent name="D:\code\python\FlaskDemo\front\static" />
       <recent name="D:\code\python\FlaskDemo\apps" />
       <recent name="D:\code\python\FlaskDemo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\python\FlaskDemo\front\templates" />
-      <recent name="D:\code\python\FlaskDemo\front\static" />
-      <recent name="D:\code\python\FlaskDemo\front\static\easyui\themes\icons" />
-      <recent name="D:\code\python\FlaskDemo\front" />
-      <recent name="D:\code\python\FlaskDemo\front\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -678,7 +662,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (wsgi.py)">
+  <component name="RunManager" selected="Python.MysqlUtil2">
+    <configuration name="MysqlUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/front/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\code\python\FlaskDemo\front\utils\mysqlUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MysqlUtil2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskDemo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/front/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\code\python\FlaskDemo\front\utils\mysqlUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="business" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FlaskDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -693,28 +721,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/front/business.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FlaskDemo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -765,16 +771,18 @@
     </configuration>
     <list>
       <item itemvalue="Flask server.Flask (wsgi.py)" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.business" />
       <item itemvalue="Python.utils" />
+      <item itemvalue="Python.MysqlUtil" />
+      <item itemvalue="Python.MysqlUtil2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MysqlUtil2" />
+        <item itemvalue="Python.MysqlUtil" />
         <item itemvalue="Flask server.Flask (wsgi.py)" />
         <item itemvalue="Python.utils" />
         <item itemvalue="Python.business" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -792,10 +800,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.101876676" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.24865952" />
+      <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.20107238" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63538873" weight="0.30878186" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21104816" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33109918" side_tool="true" weight="0.4305949" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.29886687" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.18096514" />
       <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.20107238" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -809,30 +840,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33109918" side_tool="true" weight="0.4305949" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.103666246" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25201073" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18838526" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.296034" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.29886687" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -851,84 +859,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/datagrid_data1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
-          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/datagrid/basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="86" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/tables.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="320" column="13" selection-start-line="320" selection-start-column="8" selection-end-line="320" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/easyui/messager.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/bullet_disk.png" />
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/bullet_delete.png" />
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="30" column="26" selection-start-line="27" selection-start-column="24" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/views2.py" />
     <entry file="file://$PROJECT_DIR$/front/templates/suite_neway.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1072,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1086,9 +1009,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1111,9 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,30 +1042,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gunicorn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gunicorn.conf" />
     <entry file="file://$PROJECT_DIR$/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1155,48 +1050,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="256" column="60" lean-forward="true" selection-start-line="256" selection-start-column="60" selection-end-line="256" selection-end-column="60" />
-          <folding>
-            <element signature="e#17#42#0" expanded="true" />
-            <marker date="1536827822474" expanded="true" signature="616:617" ph="..." />
-            <marker date="1536827822474" expanded="true" signature="4257:4349" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="229" column="45" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/business.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/cancel.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/help.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/filter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/filesave.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/edit_remove.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/edit_add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/cut.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/clear.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="252" column="10" lean-forward="true" selection-start-line="252" selection-start-column="10" selection-end-line="252" selection-end-column="10" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1536827003509" expanded="true" signature="250:251" ph="..." />
-            <marker date="1536827003509" expanded="true" signature="250:255" ph="..." />
-            <marker date="1536827003509" expanded="true" signature="18540:18541" ph="..." />
-            <marker date="1536827003509" expanded="true" signature="18540:18918" ph="..." />
+            <element signature="e#17#42#0" expanded="true" />
+            <marker date="1537150935223" expanded="true" signature="616:617" ph="..." />
+            <marker date="1537150935223" expanded="true" signature="4257:4349" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/sqlalchemy/sql/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="252" column="8" selection-start-line="252" selection-start-column="8" selection-end-line="252" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/dbconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/sqlalchemy/sql/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="385" column="33" lean-forward="true" selection-start-line="385" selection-start-column="33" selection-end-line="385" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/utils/mysqlUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/boot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="645" column="57" selection-start-line="645" selection-start-column="57" selection-end-line="645" selection-end-column="57" />
+        <state relative-caret-position="-1446">
+          <caret line="889" column="56" selection-start-line="889" selection-start-column="56" selection-end-line="889" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
           <folding>
-            <element signature="e#5525#5545#0#HTML" expanded="true" />
+            <marker date="1537175801664" expanded="true" signature="13377:13381" ph="..." />
           </folding>
         </state>
       </provider>

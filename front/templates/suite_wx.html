@@ -36,7 +36,7 @@
                 <option value="1">已认证</option>
                 <option value="0">未认证</option>
             </select>
-            <a id="edit-mobile-type" class="easyui-linkbutton" data-options="iconCls:'icon-save'"
+            <a id="edit-mobile-type" class="easyui-linkbutton" data-options="iconCls:'icon-edit'"
                style="width: 120px">修改手机认证</a>
         </div>
 
@@ -886,9 +886,8 @@
 
             $('#edit-mobile-type').click(function () {
 
-                alert("请使用iphone打开该链接")
-                if ($('#uid').val() == "") {
-                    $.messager.alert('提示信息', 'uid不能为空');
+                if ($('#uid').val() == "" || $('#uid').val() == 0) {
+                    $.messager.alert('提示信息', 'uid不能为空或者0');
                     return
                 }
                 if (!isRealNum($('#uid').val())) {
