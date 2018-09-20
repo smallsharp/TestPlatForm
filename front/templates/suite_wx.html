@@ -187,8 +187,9 @@
 
 
     {#  招商  #}
-    <div id="demand-business" style="display: none; padding: 0 10px">
-        <div style="height: 20px"></div>
+    <div id="demand-business" class="easyui-window" title="招商需求"
+         style="width:850px;height:750px; padding:10px "
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
         <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
             <form id="form-business">
 
@@ -272,7 +273,9 @@
 
 
     {#  车辆交易  #}
-    <div id="demand-car-sell" style="display: none; padding: 10px">
+    <div id="demand-car-sell" class="easyui-window" title="招商需求"
+         style="width:850px;height:750px; padding:10px "
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
         <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
             <form id="form-carsell">
 
@@ -356,8 +359,9 @@
 
 
     {#  其他模板  #}
-    <div id="demand-other" style="display: none; padding: 10px">
-        <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
+    <div id="demand-other" class="easyui-window" title="招商需求"
+         style="width:850px;height:750px; padding:10px "
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">        <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
 
             <div style="padding: 10px">
                 <form id="form-other">
@@ -522,453 +526,426 @@
             {# 发布车源 #}
             $('#add_cars').click(function ({}) {
                 $('#demand-cars').window('open');  // open a window
-        })
+            })
 
-        {# 点击 发布车源#}
-        $('#btn-publish-cars').click(function () {
-            $.ajax({
-                type: "post",
-                url: "{{ url_for('server.add_cars') }}",
-                data: $('#form_goods').serialize(),
-                dataType: "json",
-                async: false,
-                success: function (result) {
-                    console.log(result)
-                    console.debug('result:', result)
-                    if (result.retCode == 0) {
-                        // 发布结果
-                        $('#cars-result').val("发布成功");
-                        // 需求详情
-                        if (result.retData.isDemandChecked == 1) {
-                            $('#ck-cars-info').val(succ_msg)
-                        } else {
-                            $('#ck-cars-info').val(fail_msg)
-                            $('#ck-cars-info').attr("style", "color:red;");
+            {# 点击 发布车源#}
+            $('#btn-publish-cars').click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "{{ url_for('server.add_cars') }}",
+                    data: $('#form_goods').serialize(),
+                    dataType: "json",
+                    async: false,
+                    success: function (result) {
+                        console.log(result)
+                        console.debug('result:', result)
+                        if (result.retCode == 0) {
+                            // 发布结果
+                            $('#cars-result').val("发布成功");
+                            // 需求详情
+                            if (result.retData.isDemandChecked == 1) {
+                                $('#ck-cars-info').val(succ_msg)
+                            } else {
+                                $('#ck-cars-info').val(fail_msg)
+                                $('#ck-cars-info').attr("style", "color:red;");
 
-                        }
-
-                        // 检查需求异常日志
-                        console.log(result.retMsg)
-                        if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
-                            var s = ""
-                            for (let i = 0; i < result.retMsg.length; i++) {
-                                s += result.retMsg[i] + "\n"
                             }
-                            // 错误信息赋值
-                            $('#err-cars-detail').text(s);
-                            // 将值 设置为红色
-                            $('#err-cars-detail').attr("style", "color:red;");
 
-                        }
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                var s = ""
+                                for (let i = 0; i < result.retMsg.length; i++) {
+                                    s += result.retMsg[i] + "\n"
+                                }
+                                // 错误信息赋值
+                                $('#err-cars-detail').text(s);
+                                // 将值 设置为红色
+                                $('#err-cars-detail').attr("style", "color:red;");
 
-                        // 检查是否在我的需求中
-                        if (result.retData.isInMydemand == 1) {
-                            $('#ck-cars-mydemand').val(succ_msg)
-                        } else {
-                            $('#ck-cars-mydemand').val(fail_msg)
-                        }
-
-                        // 检查是否在推荐列表
-                        if (result.retData.isInRecommand == 1) {
-                            $('#ck-cars-recommand').val(succ_msg)
-                        } else {
-                            $('#ck-cars-recommand').val(fail_msg)
-                        }
-                    } else {
-                        $('#cars-result').val(result.retMsg)
-                        $('#ck-cars-info').val("")
-                        $('#ck-cars-mydemand').val("")
-                        $('#ck-cars-recommand').val("")
-                    }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
-            })
-        })
-
-
-        {# 发布招商 #}
-        $('#add-business').click(function () {
-            $('#demand-business').window({
-                title: "发布招商需求",
-                width: 850,
-                height: 750,
-                resizable: false,
-                minimizable: false,
-                collapsible: false,
-                maximizable: false,
-                modal: true
-            })
-        })
-
-        {# 点击 发布招商 需求 #}
-        $('#btn-publish-business').click(function () {
-            $.ajax({
-                type: "post",
-                url: "{{ url_for('server.add_business') }}",
-                data: $('#form-business').serialize(),
-                dataType: "json",
-                async: false,
-                success: function (result) {
-                    console.log(result)
-                    if (result.retCode == 0) {
-                        // 发布结果
-                        $('#business-result').val("发布成功");
-
-                        // 需求详情
-                        if (result.retData.isDemandChecked == 1) {
-                            $('#ck-business-info').val(succ_msg)
-                        } else {
-                            $('#ck-business-info').val(fail_msg)
-                            $('#ck-business-info').attr("style", "color:red;");
-
-                        }
-                        // 检查需求异常日志
-                        console.log(result.retMsg)
-                        if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
-                            $('#err-business-detail').val(result.retMsg)
-                            $('#err-business-detail').attr("style", "color:red;");
-
-                        }
-                        // 检查是否在我的需求中
-                        if (result.retData.isInMydemand == 1) {
-                            $('#ck-business-mydemand').val(succ_msg)
-                        } else {
-                            $('#ck-business-mydemand').val(fail_msg)
-                            $('#ck-business-mydemand').attr("style", "color:red;");
-
-                        }
-                        // 检查是否在推荐列表
-                        if (result.retData.isInRecommand == 1) {
-                            $('#ck-business-recommand').val(succ_msg)
-                        } else {
-                            $('#ck-business-recommand').val(fail_msg)
-                            $('#ck-business-recommand').attr("style", "color:red;");
-
-                        }
-                    } else {
-                        $('#business-result').val(result.retMsg)
-                        $('#ck-business-info').val("")
-                        $('#ck-business-mydemand').val("")
-                        $('#ck-business-recommand').val("")
-                    }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
-            })
-        })
-
-
-        {# 发布车辆交易 #}
-        $('#add-car-sell').click(function () {
-            $('#demand-car-sell').window({
-                title: "发布车辆交易需求",
-                width: 850,
-                height: 750,
-                resizable: false,
-                minimizable: false,
-                collapsible: false,
-                maximizable: false,
-                modal: true
-            })
-        })
-
-
-        {# 点击 车辆交易 需求 #}
-        $('#btn-publish-carsell').click(function () {
-            $.ajax({
-                type: "post",
-                url: "{{ url_for('server.add_carsell') }}",
-                data: $('#form-carsell').serialize(),
-                dataType: "json",
-                async: false,
-                success: function (result) {
-                    console.log(result)
-                    if (result.retCode == 0) {
-                        var succ_msg = "验证通过"
-                        var fail_msg = "验证失败"
-
-                        // 发布结果
-                        $('#carshell-result').val("发布成功");
-
-                        // 需求详情
-                        if (result.retData.isDemandChecked == 1) {
-                            $('#ck-carsell-info').val(succ_msg)
-                        } else {
-                            $('#ck-carsell-info').val(fail_msg)
-                            $('#ck-carsell-info').attr("style", "color:red;");
-                        }
-                        // 检查需求异常日志
-                        console.log(result.retMsg)
-                        if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
-                            var s = ""
-                            for (let i = 0; i < result.retMsg.length; i++) {
-                                s += result.retMsg[i] + "\n"
                             }
-                            // 错误信息赋值
-                            $('#err-carsell-detail').text(s);
-                            // 将值 设置为红色
-                            $('#err-carsell-detail').attr("style", "color:red;");
 
-                        }
-                        // 检查是否在我的需求中
-                        if (result.retData.isInMydemand == 1) {
-                            $('#ck-carsell-mydemand').val(succ_msg)
-                        } else {
-                            $('#ck-carsell-mydemand').val(fail_msg)
-                            $('#ck-carsell-mydemand').attr("style", "color:red;");
-                        }
-                        // 检查是否在推荐列表
-                        if (result.retData.isInRecommand == 1) {
-                            $('#ck-carsell-recommand').val(succ_msg)
-                        } else {
-                            $('#ck-carsell-recommand').val(fail_msg)
-                            $('#ck-carsell-recommand').attr("style", "color:red;");
-                        }
-                    } else {
-                        $('#carshell-result').val(result.retMsg)
-                        $('#ck-carsell-info').val("")
-                        $('#ck-carsell-mydemand').val("")
-                        $('#ck-carsell-recommand').val("")
-                    }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
-            })
-        })
-
-
-        {# 发布其他类型 #}
-        $('#add-other').click(function () {
-            openOtherWindow()
-        })
-
-        function openOtherWindow() {
-            $('#demand-other').window({
-                title: "发布其他模板需求",
-                width: 850,
-                height: 750,
-                resizable: false,
-                minimizable: false,
-                collapsible: false,
-                maximizable: false,
-                modal: true
-            })
-        }
-
-
-        {# 点击 发布其他类型 需求 #}
-        $('#btn-publish-other').click(function () {
-            console.log("点击！")
-            var otherInfo = {
-                "type": $('#cb-demandType').combobox('getValue'),
-                "addr": "上海市青浦区徐龙路",
-                "lon": 121.2715,
-                "lat": 31.19542,
-                "endDate": "2020-10-01",
-                "title": $('#other-title').val(),
-                "desc": $('#other-desc').val(),
-                "url": $('#other-url').val()
-            }
-
-            // 其他模板的参数
-            var params = {
-                openId: "o94HS5PrLEd6AeyLRM5XimFX90tU",
-                info: otherInfo
-            }
-            console.log(params)
-
-            $.ajax({
-                type: "post",
-                url: "{{ url_for('server.add_other') }}",
-                data: JSON.stringify(params), // 必须
-                dataType: "json",
-                async: false,
-                success: function (result) {
-                    console.log(result)
-                    if (result.retCode == 0) {
-                        var succ_msg = "验证通过"
-                        var fail_msg = "验证失败"
-
-                        // 发布结果
-                        $('#other-result').val("发布成功");
-
-                        // 需求详情
-                        if (result.retData.isDemandChecked == 1) {
-                            $('#ck-other-info').val(succ_msg)
-                        } else {
-                            $('#ck-other-info').val(fail_msg)
-                            $('#ck-other-info').attr("style", "color:red;");
-                        }
-                        // 检查需求异常日志
-                        console.log(result.retMsg)
-                        if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
-                            var s = ""
-                            for (let i = 0; i < result.retMsg.length; i++) {
-                                s += result.retMsg[i] + "\n"
+                            // 检查是否在我的需求中
+                            if (result.retData.isInMydemand == 1) {
+                                $('#ck-cars-mydemand').val(succ_msg)
+                            } else {
+                                $('#ck-cars-mydemand').val(fail_msg)
                             }
-                            // 错误信息赋值
-                            $('#err-other-detail').text(s);
-                            // 将值 设置为红色
-                            $('#err-other-detail').attr("style", "color:red;");
 
-                        }
-                        // 检查是否在我的需求中
-                        if (result.retData.isInMydemand == 1) {
-                            $('#ck-other-mydemand').val(succ_msg)
+                            // 检查是否在推荐列表
+                            if (result.retData.isInRecommand == 1) {
+                                $('#ck-cars-recommand').val(succ_msg)
+                            } else {
+                                $('#ck-cars-recommand').val(fail_msg)
+                            }
                         } else {
-                            $('#ck-other-mydemand').val(fail_msg)
-                            $('#ck-other-mydemand').attr("style", "color:red;");
+                            $('#cars-result').val(result.retMsg)
+                            $('#ck-cars-info').val("")
+                            $('#ck-cars-mydemand').val("")
+                            $('#ck-cars-recommand').val("")
                         }
-                        // 检查是否在推荐列表
-                        if (result.retData.isInRecommand == 1) {
-                            $('#ck-other-recommand').val(succ_msg)
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
+                    }
+                })
+            })
+
+
+            {# 发布招商 #}
+            $('#add-business').click(function () {
+                $('#demand-business').window('open');  // open a window
+            })
+
+            {# 点击 发布招商 需求 #}
+            $('#btn-publish-business').click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "{{ url_for('server.add_business') }}",
+                    data: $('#form-business').serialize(),
+                    dataType: "json",
+                    async: false,
+                    success: function (result) {
+                        console.log(result)
+                        if (result.retCode == 0) {
+                            // 发布结果
+                            $('#business-result').val("发布成功");
+
+                            // 需求详情
+                            if (result.retData.isDemandChecked == 1) {
+                                $('#ck-business-info').val(succ_msg)
+                            } else {
+                                $('#ck-business-info').val(fail_msg)
+                                $('#ck-business-info').attr("style", "color:red;");
+
+                            }
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                $('#err-business-detail').val(result.retMsg)
+                                $('#err-business-detail').attr("style", "color:red;");
+
+                            }
+                            // 检查是否在我的需求中
+                            if (result.retData.isInMydemand == 1) {
+                                $('#ck-business-mydemand').val(succ_msg)
+                            } else {
+                                $('#ck-business-mydemand').val(fail_msg)
+                                $('#ck-business-mydemand').attr("style", "color:red;");
+
+                            }
+                            // 检查是否在推荐列表
+                            if (result.retData.isInRecommand == 1) {
+                                $('#ck-business-recommand').val(succ_msg)
+                            } else {
+                                $('#ck-business-recommand').val(fail_msg)
+                                $('#ck-business-recommand').attr("style", "color:red;");
+
+                            }
                         } else {
-                            $('#ck-other-recommand').val(fail_msg)
-                            $('#ck-other-recommand').attr("style", "color:red;");
+                            $('#business-result').val(result.retMsg)
+                            $('#ck-business-info').val("")
+                            $('#ck-business-mydemand').val("")
+                            $('#ck-business-recommand').val("")
                         }
-                    } else {
-                        $('#other-result').val(result.retMsg)
-                        $('#ck-other-info').val("")
-                        $('#ck-other-mydemand').val("")
-                        $('#ck-other-recommand').val("")
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
                     }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
+                })
             })
-        })
 
 
-        {# 删除需求 #}
-        $('#del_demand').click(function () {
-            $.ajax({
-                url: "{{ url_for('front.delDemands') }}",
-                type: "post",
-                data: {
-                    "openId": $('#cb_openIds').combobox('getValue')
-                },
-                dataType: "json",
-                async: false,
-                success: function (res) {
-                    alert('删除成功')
-                },
-                error: function (res) {
-                    alert('删除失败')
-                }
+            {# 发布车辆交易 #}
+            $('#add-car-sell').click(function () {
+                $('#demand-car-sell').window('open');  // open a window
             })
-        })
 
+            {# 点击 车辆交易 需求 #}
+            $('#btn-publish-carsell').click(function () {
+                $.ajax({
+                    type: "post",
+                    url: "{{ url_for('server.add_carsell') }}",
+                    data: $('#form-carsell').serialize(),
+                    dataType: "json",
+                    async: false,
+                    success: function (result) {
+                        console.log(result)
+                        if (result.retCode == 0) {
+                            var succ_msg = "验证通过"
+                            var fail_msg = "验证失败"
 
-        {# 修改手机认证 状态 #}
+                            // 发布结果
+                            $('#carshell-result').val("发布成功");
 
-        $('#edit-mobile-type').click(function () {
+                            // 需求详情
+                            if (result.retData.isDemandChecked == 1) {
+                                $('#ck-carsell-info').val(succ_msg)
+                            } else {
+                                $('#ck-carsell-info').val(fail_msg)
+                                $('#ck-carsell-info').attr("style", "color:red;");
+                            }
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                var s = ""
+                                for (let i = 0; i < result.retMsg.length; i++) {
+                                    s += result.retMsg[i] + "\n"
+                                }
+                                // 错误信息赋值
+                                $('#err-carsell-detail').text(s);
+                                // 将值 设置为红色
+                                $('#err-carsell-detail').attr("style", "color:red;");
 
-            if ($('#uid').val() == "" || $('#uid').val() == 0) {
-                $.messager.alert('提示信息', 'uid不能为空或者0');
-                return
-            }
-            if (!isRealNum($('#uid').val())) {
-                $.messager.alert('提示信息', 'uid必须是数字,不要乱输！');
-                return
-            }
-
-            $.ajax({
-                url: "{{ url_for('server.edit_mobileAuth') }}",
-                type: "post",
-                data: {
-                    "uid": $('#uid').val(),
-                    "type": $('#cb-moblie-type').combobox('getValue')
-                },
-                dataType: "json",
-                async: false,
-                success: function (res) {
-                    if (res.retCode == 0)
-                        $.messager.show({
-                            title: '消息提示',
-                            msg: '修改成功',
-                            timeout: 3000,
-                            showType: 'slide'
-                        });
-
-                    else {
-                        alert(res.retMsg)
+                            }
+                            // 检查是否在我的需求中
+                            if (result.retData.isInMydemand == 1) {
+                                $('#ck-carsell-mydemand').val(succ_msg)
+                            } else {
+                                $('#ck-carsell-mydemand').val(fail_msg)
+                                $('#ck-carsell-mydemand').attr("style", "color:red;");
+                            }
+                            // 检查是否在推荐列表
+                            if (result.retData.isInRecommand == 1) {
+                                $('#ck-carsell-recommand').val(succ_msg)
+                            } else {
+                                $('#ck-carsell-recommand').val(fail_msg)
+                                $('#ck-carsell-recommand').attr("style", "color:red;");
+                            }
+                        } else {
+                            $('#carshell-result').val(result.retMsg)
+                            $('#ck-carsell-info').val("")
+                            $('#ck-carsell-mydemand').val("")
+                            $('#ck-carsell-recommand').val("")
+                        }
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
                     }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
+                })
             })
 
-        })
 
+            {# 发布其他类型 #}
+            $('#add-other').click(function () {
+                // 打开其他类型窗口
+                openOtherWindow()
+            })
 
-        {# 清除缓存 #}
-        $('#del_cache').click(function () {
-            if ($('#tb_uid').val() == "") {
-                $.messager.alert('提示信息', 'uid不能为空');
-                return
+            function openOtherWindow() {
+                $('#demand-other').window('open');  // open a window
             }
-            if (!isRealNum($('#tb_uid').val())) {
-                $.messager.alert('提示信息', 'uid必须是数字,不要乱输！');
-                return
-            }
-            $.ajax({
-                url: "{{ url_for('front.del_cache') }}",
-                type: "get",
-                data: {
-                    "uid": $('#tb_uid').val()
-                },
-                dataType: "json",
-                async: false,
-                success: function (res) {
-                    if (res.retCode == 0)
-                        $.messager.show({
-                            title: '消息提示',
-                            msg: '清除缓存完成！',
-                            timeout: 3000,
-                            showType: 'slide'
-                        });
 
-                    else {
-                        alert(res.retMsg)
+
+            {# 点击 发布其他类型 需求 #}
+            $('#btn-publish-other').click(function () {
+                console.log("点击！")
+                var otherInfo = {
+                    "type": $('#cb-demandType').combobox('getValue'),
+                    "addr": "上海市青浦区徐龙路",
+                    "lon": 121.2715,
+                    "lat": 31.19542,
+                    "endDate": "2020-10-01",
+                    "title": $('#other-title').val(),
+                    "desc": $('#other-desc').val(),
+                    "url": $('#other-url').val()
+                }
+
+                // 其他模板的参数
+                var params = {
+                    openId: "o94HS5PrLEd6AeyLRM5XimFX90tU",
+                    info: otherInfo
+                }
+                console.log(params)
+
+                $.ajax({
+                    type: "post",
+                    url: "{{ url_for('server.add_other') }}",
+                    data: JSON.stringify(params), // 必须
+                    dataType: "json",
+                    async: false,
+                    success: function (result) {
+                        console.log(result)
+                        if (result.retCode == 0) {
+                            var succ_msg = "验证通过"
+                            var fail_msg = "验证失败"
+
+                            // 发布结果
+                            $('#other-result').val("发布成功");
+
+                            // 需求详情
+                            if (result.retData.isDemandChecked == 1) {
+                                $('#ck-other-info').val(succ_msg)
+                            } else {
+                                $('#ck-other-info').val(fail_msg)
+                                $('#ck-other-info').attr("style", "color:red;");
+                            }
+                            // 检查需求异常日志
+                            console.log(result.retMsg)
+                            if (result.retMsg != null || result.retMsg != "" || result.retMsg != []) {
+                                var s = ""
+                                for (let i = 0; i < result.retMsg.length; i++) {
+                                    s += result.retMsg[i] + "\n"
+                                }
+                                // 错误信息赋值
+                                $('#err-other-detail').text(s);
+                                // 将值 设置为红色
+                                $('#err-other-detail').attr("style", "color:red;");
+
+                            }
+                            // 检查是否在我的需求中
+                            if (result.retData.isInMydemand == 1) {
+                                $('#ck-other-mydemand').val(succ_msg)
+                            } else {
+                                $('#ck-other-mydemand').val(fail_msg)
+                                $('#ck-other-mydemand').attr("style", "color:red;");
+                            }
+                            // 检查是否在推荐列表
+                            if (result.retData.isInRecommand == 1) {
+                                $('#ck-other-recommand').val(succ_msg)
+                            } else {
+                                $('#ck-other-recommand').val(fail_msg)
+                                $('#ck-other-recommand').attr("style", "color:red;");
+                            }
+                        } else {
+                            $('#other-result').val(result.retMsg)
+                            $('#ck-other-info').val("")
+                            $('#ck-other-mydemand').val("")
+                            $('#ck-other-recommand').val("")
+                        }
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
                     }
-                },
-                error: function (data, type, err) {
-                    console.log("ajax错误类型：" + type);
-                    console.log(err);
-                    alert("发布过程中出现异常,前往控制台查看错误信息！")
-                }
+                })
             })
-        })
 
 
-        //判断一个值是否为数字
-        function isRealNum(val) {
-            // isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
-            if (val === "" || val == null) {
-                return false;
+            {# 删除需求 #}
+            $('#del_demand').click(function () {
+                $.ajax({
+                    url: "{{ url_for('front.delDemands') }}",
+                    type: "post",
+                    data: {
+                        "openId": $('#cb_openIds').combobox('getValue')
+                    },
+                    dataType: "json",
+                    async: false,
+                    success: function (res) {
+                        alert('删除成功')
+                    },
+                    error: function (res) {
+                        alert('删除失败')
+                    }
+                })
+            })
+
+
+            {# 修改手机认证 状态 #}
+
+            $('#edit-mobile-type').click(function () {
+
+                if ($('#uid').val() == "" || $('#uid').val() == 0) {
+                    $.messager.alert('提示信息', 'uid不能为空或者0');
+                    return
+                }
+                if (!isRealNum($('#uid').val())) {
+                    $.messager.alert('提示信息', 'uid必须是数字,不要乱输！');
+                    return
+                }
+
+                $.ajax({
+                    url: "{{ url_for('server.edit_mobileAuth') }}",
+                    type: "post",
+                    data: {
+                        "uid": $('#uid').val(),
+                        "type": $('#cb-moblie-type').combobox('getValue')
+                    },
+                    dataType: "json",
+                    async: false,
+                    success: function (res) {
+                        if (res.retCode == 0)
+                            $.messager.show({
+                                title: '消息提示',
+                                msg: '修改成功',
+                                timeout: 3000,
+                                showType: 'slide'
+                            });
+
+                        else {
+                            alert(res.retMsg)
+                        }
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
+                    }
+                })
+
+            })
+
+
+            {# 清除缓存 #}
+            $('#del_cache').click(function () {
+                if ($('#tb_uid').val() == "") {
+                    $.messager.alert('提示信息', 'uid不能为空');
+                    return
+                }
+                if (!isRealNum($('#tb_uid').val())) {
+                    $.messager.alert('提示信息', 'uid必须是数字,不要乱输！');
+                    return
+                }
+                $.ajax({
+                    url: "{{ url_for('front.del_cache') }}",
+                    type: "get",
+                    data: {
+                        "uid": $('#tb_uid').val()
+                    },
+                    dataType: "json",
+                    async: false,
+                    success: function (res) {
+                        if (res.retCode == 0)
+                            $.messager.show({
+                                title: '消息提示',
+                                msg: '清除缓存完成！',
+                                timeout: 3000,
+                                showType: 'slide'
+                            });
+
+                        else {
+                            alert(res.retMsg)
+                        }
+                    },
+                    error: function (data, type, err) {
+                        console.log("ajax错误类型：" + type);
+                        console.log(err);
+                        alert("发布过程中出现异常,前往控制台查看错误信息！")
+                    }
+                })
+            })
+
+
+            //判断一个值是否为数字
+            function isRealNum(val) {
+                // isNaN()函数 把空串 空格 以及NUll 按照0来处理 所以先去除
+                if (val === "" || val == null) {
+                    return false;
+                }
+                if (!isNaN(val)) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
-            if (!isNaN(val)) {
-                return true;
-            } else {
-                return false;
-            }
-        }
 
         })
 
