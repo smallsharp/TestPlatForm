@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/default/easyui.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/themes/icon.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='easyui/demo/demo.css') }}">
+    {#  引入自定义的css文件  #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mycss.css') }}">
+
     <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='easyui/jquery.easyui.min.js') }}"></script>
 </head>
@@ -61,6 +64,7 @@
 
     $(function () {
         $('#tt').tree({
+
             onClick: function (node) {
                 if ($('#tabs').tree('isLeaf', node.target)) { //判断是否是叶子节点
                     {#var tab = $('#tt').tabs('getSelected');#}

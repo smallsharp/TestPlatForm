@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
+    {# 首页 #}
+    <div class="easyui-panel" style="margin: 10px; padding:10px;">
 
-    <div class="easyui-panel" style="margin: 10px; padding:10px; padding-top: 10px">
         <div>
             <a id="add_goods" class="easyui-linkbutton" data-options="iconCls:'icon-add'">发布货源</a>
             <a id="add_cars" class="easyui-linkbutton" data-options="iconCls:'icon-add'">发布车源</a>
@@ -40,97 +41,92 @@
                style="width: 120px">修改手机认证</a>
         </div>
 
-        {#    <iframe align="center" width="100%" height="170" src="{{ url_for('front.login') }}" frameborder="no" border="0" marginwidth="0"#}
-        {#            marginheight="0" scrolling="no"></iframe>#}
+    </div>
 
+    {# 货源需求 #}
+    <div id="demand_goods" class="easyui-window div-demand" title="货源需求"
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
+        <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
+            <form id="form_goods">
 
-        {# 货源需求 #}
-        <div id="demand_goods" class="easyui-window" title="货源需求"
-             style="width:850px;height:700px; padding:10px "
-             data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
-            <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
-                <form id="form_goods">
+                <div style="padding: 10px; ">
+                    <label for="goodsName">货物名称:</label>
+                    <input class="easyui-textbox" style="width:300px" value="手机" name="goodsName" id="goodsName">
 
-                    <div style="padding: 10px; ">
-                        <label for="goodsName">货物名称:</label>
-                        <input class="easyui-textbox" style="width:300px" value="手机" name="goodsName" id="goodsName">
+                    <label for="startAddress">装货地址:</label>
+                    <input class="easyui-textbox" style="width:300px" value="上海市青浦区华徐公路888号" name="startAddress">
+                </div>
 
-                        <label for="startAddress">装货地址:</label>
-                        <input class="easyui-textbox" style="width:300px" value="上海市青浦区华徐公路888号" name="startAddress">
-                    </div>
+                <div style="padding: 10px">
+                    <label for="email">卸货地址:</label>
+                    <input class="easyui-textbox" style="width:300px" value="北京市海淀区" name="endAddress">
+                    <label for="email">装车时间:</label>
+                    <input class="easyui-textbox" style="width:300px" value="2018-12-31 11:30"
+                           name="carryGoodsTime">
+                </div>
 
-                    <div style="padding: 10px">
-                        <label for="email">卸货地址:</label>
-                        <input class="easyui-textbox" style="width:300px" value="北京市海淀区" name="endAddress">
-                        <label for="email">装车时间:</label>
-                        <input class="easyui-textbox" style="width:300px" value="2018-12-31 11:30"
-                               name="carryGoodsTime">
-                    </div>
+                <div style="padding: 10px">
+                    <label for="email">货物体积:</label>
+                    <input class="easyui-textbox" style="width:300px" value="22" name="carryVolume">
+                    <label for="email">车长车型:</label>
+                    <input class="easyui-textbox" style="width:300px" value="1.8米 半挂牵引车" name="carModel">
+                </div>
 
-                    <div style="padding: 10px">
-                        <label for="email">货物体积:</label>
-                        <input class="easyui-textbox" style="width:300px" value="22" name="carryVolume">
-                        <label for="email">车长车型:</label>
-                        <input class="easyui-textbox" style="width:300px" value="1.8米 半挂牵引车" name="carModel">
-                    </div>
+                <div style="padding: 10px">
+                    <label for="email">发布地点:</label>
+                    <input class="easyui-textbox" style="width:300px" value="上海市青浦区双联路88号" name="addr">
+                    <label for="email">有效期限:</label>
+                    <input class="easyui-textbox" style="width:300px" value="2020-12-15" name="endDate">
+                </div>
 
-                    <div style="padding: 10px">
-                        <label for="email">发布地点:</label>
-                        <input class="easyui-textbox" style="width:300px" value="上海市青浦区双联路88号" name="addr">
-                        <label for="email">有效期限:</label>
-                        <input class="easyui-textbox" style="width:300px" value="2020-12-15" name="endDate">
-                    </div>
-
-                    <div style="padding: 10px">
-                        <span>openId:</span>
-                        <select id="cb_openIds" class="easyui-combobox" name="openId" style="width:280px"
-                                data-options="url:'{{ url_for("server.getOpenIds") }}',
+                <div style="padding: 10px">
+                    <span>openId:</span>
+                    <select id="cb_openIds" class="easyui-combobox" name="openId" style="width:280px"
+                            data-options="url:'{{ url_for("server.getOpenIds") }}',
                                 method:'get',
                                 valueField:'id',
                                 textField:'text' ">
-                        </select>
+                    </select>
 
-                        <a id="btn-publish-goods" class="easyui-linkbutton" style="margin-left: 30px;width: 150px"
-                           data-options="iconCls:'icon-add'">点击发布</a>
-                    </div>
-                </form>
-            </div>
-
-            <div style="height: 10px"></div>
-
-            <div class="easyui-panel" title="验证点" style="padding: 10px">
-                <div class="mdiv" style="padding-top: 10px">
-                    <span>发布结果：</span>
-                    <input id="add_result" type="text" readonly=true/>
+                    <a id="btn-publish-goods" class="easyui-linkbutton" style="margin-left: 30px;width: 150px"
+                       data-options="iconCls:'icon-add'">点击发布</a>
                 </div>
-                <div class="mdiv" style="padding-top: 10px">
-                    <span>验证需求详情：</span>
-                    <input id="ck_demandinfo" type="text" readonly=true/>
-                </div>
-                <div class="mdiv" style="padding-top: 10px">
-                    <span>验证我的需求：</span>
-                    <input id="ck_mydemand" type="text" readonly=true/>
-                </div>
-                <div class="mdiv" style="padding-top: 10px">
-                    <span>验证需求广场：</span>
-                    <input id="ck_recommand" type="text" readonly=true/>
-                </div>
-            </div>
-
-            <div style="height: 10px"></div>
-
-            <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
-                <textarea id="err-goods-detail" cols="80" rows="6" style="resize:none"></textarea>
-            </div>
-
+            </form>
         </div>
+
+        <div style="height: 10px"></div>
+
+        <div class="easyui-panel" title="验证点" style="padding: 10px">
+            <div class="mdiv" style="padding-top: 10px">
+                <span>发布结果：</span>
+                <input id="add_result" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证需求详情：</span>
+                <input id="ck_demandinfo" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证我的需求：</span>
+                <input id="ck_mydemand" type="text" readonly=true/>
+            </div>
+            <div class="mdiv" style="padding-top: 10px">
+                <span>验证需求广场：</span>
+                <input id="ck_recommand" type="text" readonly=true/>
+            </div>
+        </div>
+
+        <div style="height: 10px"></div>
+
+        <div class="easyui-panel" title="错误详情" style="padding:10px;" id="err-carsell-panel">
+            <textarea id="err-goods-detail" cols="80" rows="6" style="resize:none"></textarea>
+        </div>
+
     </div>
 
 
     {#  车源  #}
     {#    <div id="demand-cars" style="display: none;padding: 10px">#}
-    <div id="demand-cars" class="easyui-window" title="货源需求"
-         style="width:850px;height:700px; padding:10px "
+    <div id="demand-cars" class="easyui-window div-demand" title="车源需求"
          data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
         <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
             <form id="form-cars">
@@ -185,10 +181,8 @@
     </div>
 
 
-
     {#  招商  #}
-    <div id="demand-business" class="easyui-window" title="招商需求"
-         style="width:850px;height:750px; padding:10px "
+    <div id="demand-business" class="easyui-window div-demand" title="招商需求"
          data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
         <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
             <form id="form-business">
@@ -271,10 +265,8 @@
     </div>
 
 
-
     {#  车辆交易  #}
-    <div id="demand-car-sell" class="easyui-window" title="招商需求"
-         style="width:850px;height:750px; padding:10px "
+    <div id="demand-car-sell" class="easyui-window div-demand" title="招商需求"
          data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
         <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
             <form id="form-carsell">
@@ -357,16 +349,16 @@
     </div>
 
 
-
     {#  其他模板  #}
-    <div id="demand-other" class="easyui-window" title="招商需求"
-         style="width:850px;height:750px; padding:10px "
-         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">        <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
+    <div id="demand-other" class="easyui-window div-demand" title="其他类型需求"
+         data-options="modal:true,resizable:false,collapsible:false,minimizable:false,maximizable:false,closed:true ">
+        <div class="easyui-panel" title="基本信息"> {# noheader="true" #}
 
             <div style="padding: 10px">
                 <form id="form-other">
                     <span>需求类型:</span>
-                    <select id="cb-demandType" class="easyui-combobox" name="openId" style="width:100px;height: auto">
+                    <select id="cb-demandType" class="easyui-combobox" name="openId"
+                            style="width:100px;height: auto">
                         <option value="8">其他</option>
                         <option value="3">挂靠</option>
                         <option value="5">金融</option>
