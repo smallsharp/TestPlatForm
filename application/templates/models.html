@@ -106,7 +106,7 @@
         function suiteDetail(rowId) {
             $.ajax({
                 type: 'post',
-                url: "{{ url_for('front.suite_detail') }}",
+                url: "{{ url_for('application.suite_detail') }}",
                 data: {"id": rowId},
                 dataType: 'json',
                 success: function (data) {
@@ -132,7 +132,7 @@
         $('#btn_publish').click(function () {
             $.ajax({
                 type: "post",
-                url: "{{ url_for('front.add_goods') }}",
+                url: "{{ url_for('application.add_goods') }}",
                 data: $('#form_goods').serialize(),
                 dataType: "json",
                 async: false,

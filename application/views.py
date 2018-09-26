@@ -1,18 +1,16 @@
 # encoding=utf-8
-from flask import request
-from flask import render_template, redirect, url_for
-from front.models import Article
+from flask import render_template, redirect, url_for,request
+from application.models import Article
 from flask import session
 from flask import Blueprint
 from . import db
-from .models import User
 import requests
 import json
 from flask import jsonify
-from . import business, urls
+from . import urls
 
-# front = Blueprint('front', __name__, template_folder='templates',url_prefix='/front')
-front = Blueprint('front', __name__, template_folder='templates')
+# application = Blueprint('application', __name__, template_folder='templates',url_prefix='/application')
+front = Blueprint('application', __name__, template_folder='templates')
 
 
 @front.route('/')
@@ -23,21 +21,6 @@ def index():
 @front.route('/test')
 def index2():
     return render_template('test.html')
-
-
-@front.route("/register", methods=['GET', 'POST'])
-def register():
-    if current_user.is_authenticated:
-        return redirect(url_for('front.login'))
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(username=form.username.data, email=form.email.data, password=hashed_password)
-        db.session.add(user)
-        db.session.commit()
-        flash('Your account has been created! You are now able to log in', 'success')
-        return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
 
 
 @front.route('/login/', methods=['GET', 'POST'])
@@ -75,7 +58,7 @@ def new_article():
             # 事务
             db.session.commit()
             # return str({"retCode": 0, "title": title, "content": content})
-            return redirect(url_for('front.article_list'))
+            return redirect(url_for('application.article_list'))
         else:
             return str({"retCode": 1001, "retMsg": '文章标题或内容不能为空', "retData": None})
 
@@ -194,7 +177,7 @@ def suite_finance():
 
 @front.route('/suite/all')
 def suite_all():
-    return render_template('suite_all.html')
+    return render_template('auto.html')
 
 
 @front.route('/suite/list/', methods=['GET', 'POST'])

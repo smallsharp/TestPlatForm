@@ -1,4 +1,4 @@
-from front import create_app
+from application import create_app
 app = create_app()
 
 # 入口函数

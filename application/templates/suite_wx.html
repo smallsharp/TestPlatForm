@@ -824,7 +824,7 @@
             {# 删除需求 #}
             $('#del_demand').click(function () {
                 $.ajax({
-                    url: "{{ url_for('front.delDemands') }}",
+                    url: "{{ url_for('application.delDemands') }}",
                     type: "post",
                     data: {
                         "openId": $('#cb_openIds').combobox('getValue')
@@ -897,7 +897,7 @@
                     return
                 }
                 $.ajax({
-                    url: "{{ url_for('front.del_cache') }}",
+                    url: "{{ url_for('application.del_cache') }}",
                     type: "get",
                     data: {
                         "uid": $('#tb_uid').val()

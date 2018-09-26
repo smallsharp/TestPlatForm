@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="373ea3d8-684a-4ec7-90b4-438a694394c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TesterHome/front/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TesterHome/server/migrations/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../flasktest/templates/index.html" afterDir="false" />
@@ -19,8 +20,917 @@
       <change beforePath="$PROJECT_DIR$/../.pydevproject" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/suite_wx.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/suite_wx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/business.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/accordion/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/accordion/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/accordion/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/animation/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/animation/fade.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/animation/pop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/animation/slide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/badge/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/badge/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/badge/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/badge/tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/button/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/button/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/button/style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/button/switch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/datagrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/datagrid/rowediting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/datalist/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/datalist/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/datalist/selection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/dialog/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/dialog/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/form/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/login1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/modem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/pda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/scanner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/images/tablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/input/numberspinner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/input/textbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/layout/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/menu/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/menu/menubar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/panel/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/panel/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/panel/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/panel/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/simplelist/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/simplelist/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/simplelist/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/simplelist/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/simplelist/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/tabs/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/tabs/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/tabs/pill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/toolbar/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/toolbar/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/toolbar/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/tree/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo-mobile/tree/dnd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/datagrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/expandable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/horizontal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/accordion/tools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/disabledate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/firstday.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/calendar/weeknumber.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combo/animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combo/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/customformat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/dynamicdata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/itemicon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/multiline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/remotedata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combobox/remotejsonp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/datagrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/initvalue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combogrid/setvalue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/initvalue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotree/tree_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotreegrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotreegrid/multiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/combotreegrid/treegrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/aligncolumns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/cacheeditor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/cellediting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/cellstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/clientpagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/columngroup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/complextoolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/contextmenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/custompager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/datagrid_data2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/formatcolumns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/frozencolumns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/frozenrows.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/mergecells.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/multisorting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/rowborder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/rowediting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/rowstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/selection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/simpletoolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datagrid/transform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/datalist_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/multiselect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datalist/remotedata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/clone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/dateformat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/restrict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/sharedcalendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datebox/validate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimebox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimebox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimebox/initvalue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimebox/showseconds.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimespinner/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimespinner/clearicon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimespinner/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/datetimespinner/format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/dialog/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/dialog/complextoolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/dialog/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/dialog/toolbarbuttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/draggable/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/draggable/constrain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/draggable/snap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/droppable/accept.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/droppable/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/droppable/sort.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/easyloader/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/filebox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/filebox/buttonalign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/filebox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/form/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/form/form_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/form/load.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/form/validateonsubmit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/addremove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/autoheight.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/collapsetitle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/complex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/customcollapsetitle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/datagrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/full.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/nestedlayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/nocollapsible.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/propertygrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/layout/tree_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/iconalign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/plain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/linkbutton/toggle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/maskedbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menu/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menu/customitem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menu/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menu/inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menu/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menubutton/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menubutton/alignment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menubutton/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/menubutton/nav.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/messager/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/messager/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/messager/interactive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/messager/position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberbox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberbox/format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberbox/range.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberspinner/align.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberspinner/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberspinner/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberspinner/increment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/numberspinner/range.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/attaching.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/custombuttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/pagination/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/customtools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/halign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/loadcontent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/nestedpanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/panel/paneltools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/passwordbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/passwordbox/flash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/passwordbox/validatepassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/progressbar/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/progressbar/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/propertygrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/propertygrid/customcolumns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/propertygrid/groupformat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/propertygrid/propertygrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/resizable/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/searchbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/searchbox/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/searchbox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/formattip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/nonlinear.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/range.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/rule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/slider/vertical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/splitbutton/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/splitbutton/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/switchbutton/action.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/switchbutton/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/autoheight.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/fixedwidth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/hover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/images/modem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/images/pda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/images/scanner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/images/tablet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/nestedtabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/striptools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/tabimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/tabposition.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/tabstools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tabs/tree_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/autocomplete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/format.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/style.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/tagbox_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tagbox/validate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/clearicon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/multiline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/textbox/size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/timespinner/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/timespinner/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/timespinner/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/timespinner/range.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/_content.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/_dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/customcontent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/customstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/position.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tooltip/tooltipdialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/contextmenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/customcheckbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/dnd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/editable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/formatting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/lazyload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/lines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/tree_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/tree/tree_data2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/actions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/checkbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/clientpagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/contextmenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/customcheckbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/editable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/lines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/reports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/treegrid_data1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/treegrid_data2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/treegrid/treegrid_data3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/validatebox/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/validatebox/customtooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/validatebox/errorplacement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/validatebox/validateonblur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/borderstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/customtools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/fluid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/inlinewindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/modalwindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/demo/window/windowlayout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/easyloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/jquery.easyui.mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/license_freeware.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-am.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-cz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-jp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/locale/easyui-lang-zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.combo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.combobox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.combogrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.combotree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.combotreegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.datagrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.datalist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.datebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.datetimebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.datetimespinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.draggable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.droppable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.filebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.linkbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.maskedbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.menubutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.messager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.numberbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.numberspinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.passwordbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.progressbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.propertygrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.resizable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.searchbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.spinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.splitbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.switchbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.tagbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.textbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.timespinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.treegrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.validatebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/plugins/jquery.window.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/easyloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.combobox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.datebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.draggable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.droppable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.linkbutton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.progressbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.propertygrid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.resizable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/src/jquery.window.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/angular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/black/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/bootstrap/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/color.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/default/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/gray/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/filter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/large_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/large_clipart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/large_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/large_shapes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/large_smartart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/mini_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/mini_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/mini_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material-teal/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/material/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/accordion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/checkbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/combo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/combobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/datagrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/datalist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/datebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/filebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/linkbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/menubutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/messager.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/numberbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/pagination.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/passwordbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/progressbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/propertygrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/radiobutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/searchbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/sidemenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/spinner.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/splitbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/switchbutton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/tagbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/textbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/tooltip.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/validatebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/metro/window.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/easyui/themes/mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/mycss.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/static/myjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/art_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/auto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/boot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/easyui/easyui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/easyui/easyui_panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/easyui/messager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/goods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/models.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/new_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/read_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/suite_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/suite_finance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/suite_neway.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/suite_wx.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/utils/mysqlUtil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/utils/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/1.基础用法.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/2.制作新浪新闻网络爬虫.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../advanced/BeautifulSoup库/__init__.py" beforeDir="false" />
@@ -367,7 +1277,7 @@
     <SUITE FILE_PATH="coverage/FlaskDemo$business.coverage" NAME="business Coverage Results" MODIFIED="1536030491197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front" />
     <SUITE FILE_PATH="coverage/FlaskDemo$test.coverage" NAME="test Coverage Results" MODIFIED="1534414471132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlaskDemo$Flask__main_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1536113579762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FlaskDemo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1536653097160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front/utils" />
+    <SUITE FILE_PATH="coverage/FlaskDemo$utils.coverage" NAME="utils Coverage Results" MODIFIED="1537353663553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/front/utils" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -387,67 +1297,72 @@
     <session id="-1033987875">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="7" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="5" />
-          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="3" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.20" value="6" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.opened" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="12" />
           <entry key="conf" value="2" />
-          <entry key="dummy" value="87" />
-          <entry key="html" value="16584" />
+          <entry key="css" value="105" />
+          <entry key="dummy" value="102" />
+          <entry key="html" value="17293" />
           <entry key="json" value="40" />
-          <entry key="py" value="14496" />
+          <entry key="py" value="15345" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="16581" />
+          <entry key="CSS" value="108" />
+          <entry key="HTML" value="17290" />
           <entry key="JSON" value="40" />
-          <entry key="PLAIN_TEXT" value="89" />
-          <entry key="Python" value="14508" />
+          <entry key="PLAIN_TEXT" value="104" />
+          <entry key="Python" value="15357" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="1" />
-          <entry key="html" value="103" />
-          <entry key="js" value="5" />
-          <entry key="json" value="7" />
+          <entry key="css" value="7" />
+          <entry key="html" value="115" />
+          <entry key="js" value="7" />
+          <entry key="json" value="9" />
           <entry key="png" value="10" />
-          <entry key="py" value="156" />
+          <entry key="py" value="167" />
           <entry key="rnc" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="103" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="115" />
           <entry key="Image" value="10" />
-          <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="156" />
+          <entry key="Python" value="167" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -456,22 +1371,70 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
+        <entry file="file://$PROJECT_DIR$/application/templates/suite_wx.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1446">
-              <caret line="889" column="56" selection-start-line="889" selection-start-column="56" selection-end-line="889" selection-end-column="56" />
+            <state relative-caret-position="1012">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/templates/auto.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1610">
+              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="271" column="20" lean-forward="true" selection-start-line="271" selection-start-column="20" selection-end-line="271" selection-end-column="20" />
+              <folding>
+                <marker date="1537952249171" expanded="true" signature="12624:12628" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/views.py">
+        <entry file="file://$PROJECT_DIR$/server/business.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+            <state relative-caret-position="115">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <marker date="1537175801664" expanded="true" signature="13377:13381" ph="..." />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -482,28 +1445,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>add_cars</find>
-      <find>demand-cars</find>
-      <find>btn_publish</find>
-      <find>form-business</find>
-      <find>demand_goods</find>
-      <find>demand-business</find>
-      <find>openI</find>
-      <find>btn-publish-carsell</find>
-      <find>getOpenIds</find>
-      <find>排放</find>
-      <find>err-carsell-detail</find>
-      <find>btn-publish</find>
-      <find>cb_openIds</find>
-      <find>btn</find>
-      <find>btn-publish-other</find>
       <find>add-o</find>
       <find>other-</find>
       <find>cb</find>
@@ -519,6 +1469,21 @@
       <find>btn-publish-business</find>
       <find>del</find>
       <find>edit-mobile-type</find>
+      <find>goods</find>
+      <find>车源</find>
+      <find>cars</find>
+      <find>demand-cars</find>
+      <find>demand_goods</find>
+      <find>demand-car-sell</find>
+      <find>demand-othe</find>
+      <find>云车</find>
+      <find>art</find>
+      <find>demand-business</find>
+      <find>demand-other</find>
+      <find>div-demand</find>
+      <find>formatOper</find>
+      <find>alert</find>
+      <find>is_in_recommand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -527,14 +1492,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/new_article.html" />
-        <option value="$PROJECT_DIR$/templates/easyui/messager.html" />
-        <option value="$PROJECT_DIR$/templates/easyui/easyui.html" />
-        <option value="$PROJECT_DIR$/templates/easyui/easyui_panel.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/boot.html" />
         <option value="$PROJECT_DIR$/apps/front/__init__.py" />
         <option value="$PROJECT_DIR$/apps/templates/index.html" />
         <option value="$PROJECT_DIR$/apps/templates/login.html" />
@@ -549,7 +1506,6 @@
         <option value="$PROJECT_DIR$/front/templates/suite_detail.html" />
         <option value="$PROJECT_DIR$/front/templates/login.html" />
         <option value="$PROJECT_DIR$/front/templates/suite.html" />
-        <option value="$PROJECT_DIR$/front/templates/auto.html" />
         <option value="$PROJECT_DIR$/front/templates/suite_neway.html" />
         <option value="$PROJECT_DIR$/front/templates/suite_finance.html" />
         <option value="$PROJECT_DIR$/views2.py" />
@@ -557,8 +1513,6 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/front/templates/goods.html" />
         <option value="$PROJECT_DIR$/front/templates/models.html" />
-        <option value="$PROJECT_DIR$/front/templates/index.html" />
-        <option value="$PROJECT_DIR$/front/templates/base.html" />
         <option value="$PROJECT_DIR$/front/templates/suite_all.html" />
         <option value="$PROJECT_DIR$/front/__init__.py" />
         <option value="$PROJECT_DIR$/utils.py" />
@@ -570,14 +1524,25 @@
         <option value="$PROJECT_DIR$/gunicorn.conf" />
         <option value="$PROJECT_DIR$/front/business.py" />
         <option value="$PROJECT_DIR$/wsgi.py" />
-        <option value="$PROJECT_DIR$/front/templates/boot.html" />
         <option value="$PROJECT_DIR$/front/urls.py" />
         <option value="$PROJECT_DIR$/front/views.py" />
         <option value="$PROJECT_DIR$/server/dbconfig.py" />
         <option value="$PROJECT_DIR$/front/utils/MysqlUtil2.py" />
         <option value="$PROJECT_DIR$/front/utils/mysqlUtil.py" />
+        <option value="$PROJECT_DIR$/front/static/myjs.js" />
+        <option value="$PROJECT_DIR$/front/static/wx.css" />
+        <option value="$PROJECT_DIR$/front/static/wxcss.css" />
+        <option value="$PROJECT_DIR$/front/templates/base.html" />
+        <option value="$PROJECT_DIR$/front/templates/test01.html" />
+        <option value="$PROJECT_DIR$/front/static/mycss.css" />
+        <option value="$PROJECT_DIR$/front/templates/index.html" />
         <option value="$PROJECT_DIR$/front/templates/suite_wx.html" />
+        <option value="$PROJECT_DIR$/front/templates/boot.html" />
+        <option value="$PROJECT_DIR$/front/templates/auto.html" />
         <option value="$PROJECT_DIR$/server/views.py" />
+        <option value="$PROJECT_DIR$/application/views.py" />
+        <option value="$PROJECT_DIR$/server/controller.py" />
+        <option value="$PROJECT_DIR$/server/business.py" />
       </list>
     </option>
   </component>
@@ -587,11 +1552,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-119" />
-    <option name="y" value="365" />
-    <option name="width" value="1929" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="437" />
+    <option name="y" value="81" />
+    <option name="width" value="1544" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -611,13 +1576,7 @@
             <path>
               <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlaskDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlaskDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -630,24 +1589,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../codes/chapter03-模板/template_inherit_demo" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\python\FlaskDemo\front\static" />
       <recent name="D:\code\python\FlaskDemo\front\utils" />
       <recent name="D:\code\python\FlaskDemo\front\templates" />
-      <recent name="D:\code\python\FlaskDemo\front\static" />
       <recent name="D:\code\python\FlaskDemo\front\static\easyui\themes\icons" />
       <recent name="D:\code\python\FlaskDemo\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\python\FlaskDemo\server" />
       <recent name="D:\code\python\FlaskDemo\front\utils" />
       <recent name="D:\code\python\FlaskDemo\front" />
       <recent name="D:\code\python\FlaskDemo\front\static" />
       <recent name="D:\code\python\FlaskDemo\apps" />
-      <recent name="D:\code\python\FlaskDemo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -662,7 +1622,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MysqlUtil2">
+  <component name="RunManager" selected="Python.utils">
     <configuration name="MysqlUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FlaskDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -778,10 +1738,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.MysqlUtil2" />
         <item itemvalue="Python.MysqlUtil" />
         <item itemvalue="Flask server.Flask (wsgi.py)" />
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.business" />
       </list>
     </recent_temporary>
@@ -800,15 +1760,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.24865952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.20107238" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63538873" weight="0.30878186" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.5639913" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63538873" weight="0.30802602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21104816" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -817,7 +1777,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49865952" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.33109918" side_tool="true" weight="0.4305949" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.29886687" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6689008" visible="true" weight="0.28199565" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -859,83 +1819,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_neway.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_finance.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/werkzeug/routing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="602" selection-start-line="602" selection-end-line="602" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/read_data.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="880" column="28" selection-start-line="880" selection-start-column="13" selection-end-line="880" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/flask/blueprints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="121" column="32" lean-forward="true" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/models.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/test.html">
+    <entry file="file://$PROJECT_DIR$/application/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="7" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/goods.html">
+    <entry file="file://$PROJECT_DIR$/application/templates/goods.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-411">
           <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="152" column="29" lean-forward="true" selection-start-line="152" selection-start-column="29" selection-end-line="152" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -956,35 +1850,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combo/basic.html">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/demo/combo/basic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combo/animation.html">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/demo/combo/animation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combobox/basic.html">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/demo/combobox/basic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/combobox_data1.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/demo/combobox/combobox_data1.json">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/demo/combobox/combobox_data1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/utils/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1010,32 +1894,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/__init__.py">
+    <entry file="file://$PROJECT_DIR$/application/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
-            <marker date="1536543203214" expanded="true" signature="266:267" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/forms.py">
+    <entry file="file://$PROJECT_DIR$/application/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/models.py">
+    <entry file="file://$PROJECT_DIR$/application/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
@@ -1043,67 +1916,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gunicorn.conf" />
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/business.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/cancel.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/cancel.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/help.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/help.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/filter.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/filter.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/filesave.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/filesave.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/edit_remove.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/edit_remove.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/edit_add.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/edit_add.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/cut.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/cut.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/static/easyui/themes/icons/clear.png">
+    <entry file="file://$PROJECT_DIR$/application/static/easyui/themes/icons/clear.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="252" column="10" lean-forward="true" selection-start-line="252" selection-start-column="10" selection-end-line="252" selection-end-column="10" />
-          <folding>
-            <element signature="e#17#42#0" expanded="true" />
-            <marker date="1537150935223" expanded="true" signature="616:617" ph="..." />
-            <marker date="1537150935223" expanded="true" signature="4257:4349" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1114,20 +1954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/dbconfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/dbconfig.py" />
     <entry file="file://$USER_HOME$/Envs/flask_env/Lib/site-packages/sqlalchemy/sql/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1135,36 +1962,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/utils/mysqlUtil.py">
+    <entry file="file://$PROJECT_DIR$/application/utils/mysqlUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-249">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" selection-start-line="18" selection-start-column="34" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/art_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/static/combobox_data1.json" />
+    <entry file="file://$PROJECT_DIR$/front/static/datagrid_data1.json" />
+    <entry file="file://$PROJECT_DIR$/front/static/wx.css" />
+    <entry file="file://$PROJECT_DIR$/application/static/myjs.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/test01.html" />
+    <entry file="file://$PROJECT_DIR$/application/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/static/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/boot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4007">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/suite_wx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/templates/auto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="271" column="20" lean-forward="true" selection-start-line="271" selection-start-column="20" selection-end-line="271" selection-end-column="20" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1537952249171" expanded="true" signature="12624:12628" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/boot.html">
+    <entry file="file://$PROJECT_DIR$/server/business.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/suite_wx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1446">
-          <caret line="889" column="56" selection-start-line="889" selection-start-column="56" selection-end-line="889" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+        <state relative-caret-position="115">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <marker date="1537175801664" expanded="true" signature="13377:13381" ph="..." />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15,7 +15,7 @@
             $('#login').click(function () {
                 $.ajax({
                     type: 'post',
-                    url:{{ url_for('front.login') }},
+                    url:{{ url_for('application.login') }},
                     cache: false,
                     data: $('#ff').serialize(),
                     dataType: 'json',

@@ -1,6 +1,46 @@
 {% extends "base.html" %}
+
 {% block body %}
+
+    <div style="padding: 10px;">
+
+        <table id="mytb" title="测试集合" style="width:1000px;height:500px" data-options="rownumbers:true">
+        </table>
+    </div>
+
+
+    {#    <div id="win" class="easyui-window" title="详情" closed="true" style="width:770px;height:700px;"#}
+    {#         data-options="modal:true ">#}
+    {#        <p>测试流程步骤</p>#}
+    {#        <table id="tb_detail" width="750px" height="600px"></table>#}
+    {#    </div>#}
+
+    {#  添加窗口  #}
+    <div id="add_div" style="display: none">
+        <form id="my-form">
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
+
+            <a id="btn-ok" class="easyui-linkbutton">确定</a>
+        </form>
+    </div>
+
+
     <script type="text/javascript">
+
+
+        function Edit(index) {
+            alert(index)
+            {#console.log(val)#}
+            {#console.log(row.id)#}
+            {#console.log(index)#}
+            {#return '<a onclick="suiteDetail(' + row.id + ')" class="easyui-linkbutton" >查看详情</a>';#}
+            {#return '<a class="btn-check" onclick="suiteDetail(' + index + ')"  >修改</a>';#}
+        }
+
         $(function () {
             $('#mytb').datagrid({
                 idField: "id",
@@ -8,7 +48,7 @@
                 border: true,  //表格是否显示边框
                 fitColumns: true,
                 {#fit:true,#}
-                url: "{{ url_for('front.suite_list') }}",
+                url: "{{ url_for('application.suite_list') }}",
                 method: "get",
                 scrollbarSize: 0,
                 columns: [[
@@ -26,7 +66,14 @@
                     {field: 'name', title: '用例名称', width: 100},
                     {field: 'comment', title: '用例描述', width: 200},
                     {field: 'createTime', title: '创建时间', width: 100},
-                    {field: 'view', title: '操作', width: 100, formatter: formatOper}
+                    {
+                        field: 'view', title: '操作', width: 100, formatter: function (value, row, index) {
+                            console.log("index:" + index)
+                            console.log("id:" + row.id)
+                            var Action = "<a href='javascript:void(0);' onclick='Edit(" + index + ")'>修改</a> <a href='javascript:void(0);' onclick='Delete(" + row.ID + ")'>删除</a>";
+                            return Action;
+                        }
+                    }
                 ]],
                 pagination: true,//底部是否显示分页组件
                 pageSize: 5,   //表格中每页显示的行数
@@ -78,14 +125,6 @@
             });
 
 
-            function formatOper(val, row, index) {
-                {#console.log(val)#}
-                {#console.log(row.id)#}
-                {#console.log(index)#}
-                return '<a onclick="suiteDetail(' + row.id + ')" class="easyui-linkbutton" >查看详情</a>';
-            }
-
-
             $('#tb_detail').datagrid({
                 iconCls: 'icon-edit',  //图标
                 border: true,  //表格是否显示边框
@@ -106,9 +145,10 @@
 
 
             function suiteDetail(rowId) {
+                alert("detail")
                 $.ajax({
                     type: 'post',
-                    url: "{{ url_for('front.suite_detail') }}",
+                    url: "{{ url_for('application.suite_detail') }}",
                     data: {"id": rowId},
                     dataType: 'json',
                     success: function (data) {
@@ -124,7 +164,7 @@
             {#  点击：确定  #}
             $('#btn-ok').click(function () {
                 $.ajax({
-                    url: "{{ url_for('front.suite_detail') }}",
+                    url: "{{ url_for('application.suite_detail') }}",
                     type: "post",
                     data: $('#my-form').serialize(),
                     dataType: "json",
@@ -139,26 +179,4 @@
         })
     </script>
 
-    <table id="mytb" title="测试集合" style="width:800px;height:400px" data-options="rownumbers:true">
-    </table>
-
-
-    {#    <div id="win" class="easyui-window" title="详情" closed="true" style="width:770px;height:700px;"#}
-    {#         data-options="modal:true ">#}
-    {#        <p>测试流程步骤</p>#}
-    {#        <table id="tb_detail" width="750px" height="600px"></table>#}
-    {#    </div>#}
-
-    {#  添加窗口  #}
-    <div id="add_div" style="display: none">
-        <form id="my-form">
-            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
-            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
-            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
-            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
-            <p>用例名称：<input type="text" value="" placeholder="请输入"/></p>
-
-            <a id="btn-ok" class="easyui-linkbutton">确定</a>
-        </form>
-    </div>
 {% endblock %}
